@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+.container > .krds-side-navigation:first-child:not(.open).close .admin_title p, .container > .krds-side-navigation:first-child:not(.open).close .lnb-tit, .container > .krds-side-navigation:first-child:not(.open).close .lnb-item a span, .container > .krds-side-navigation:first-child:not(.open).close .lnb-list .lnb-item .lnb-submenu {display: none;}
+.container > .krds-side-navigation:first-child .lnb-list .lnb-item.active a {background: var(--Context-action-secondary-active); color: #fff; box-shadow: 0 0 2px 0 var(--Context-alpha-shadow1), 0 4px 8px 0 var(--Context-alpha-shadow2);}
+
+
+.container > .krds-side-navigation:first-child:not(.open).close .lnb-list .lnb-item.click .lnb-submenu {display: flex !important;}
+.container > .krds-side-navigation:first-child .lnb-list .lnb-item:has(.lnb-submenu).active a:after {background-color: var(--Context-icon-inverse); transform: translateY(-50%) rotateX(180deg);}
+
+.krds-table-wrap .tbl.data tbody tr td.drag {padding: var(--padding-5) var(--padding-2);}
+.krds-table-wrap .tbl.data tbody tr td.drag .svg-icon {width: var(--Icon-Size-sizeIconSm); height: var(--Icon-Size-sizeIconSm); background-color: var(--Context-icon-gray); opacity: 0; transition: .5s ease;}
+.krds-table-wrap .tbl.data tbody tr:hover td.drag .svg-icon {opacity: 1;}
+.fieldset .select-list-result {width: 100%; display: flex; flex-wrap: wrap; gap: var(--gap-3); padding: var(--padding-6, 16px) var(--padding-6); height: 157px; border-radius: var(--radius-medium3); border: var(--border-width-variable-regular) solid var(--color-light-gray-60); background: var(--color-light-gray-0); margin-top: calc(-1 * var(--gap-3));}
+.fieldset .select-list-result li {display: flex; height: var(--size-height-5); padding: var(--padding-3) var(--padding-4); justify-content: center; align-items: center; gap: var(--gap-1);  border-radius: var(--radius-max); border: 1px solid var(--Context-border-gray-light); background: var(--Context-action-white)}
+.fieldset .select-list-result li p {font-size: var(--font-size-label-small); font-weight: 500;}
+.fieldset .select-list-result li .delet {width: 16px; height: 16px; background: url(../../images/ico-close-gray.svg) no-repeat center / contain;}
+
+
+.admin_02_02 .top-admin {display: flex; flex-direction: column; gap: 12px;}
+.admin_02_02 .role-list .krds-table-wrap tr td.name {display: flex; align-items: center; gap: var(--number-8);}
+.admin_02_02 .role-list .krds-table-wrap tr td.name .button-box {gap: var(--number-4);}
+.admin_02_02 .role-list .krds-table-wrap tr td.name .tooltip-btn {background: #063A74; border: none; font-size: var(--font-size-label-medium);}
+.admin_02_02 .role-list .krds-table-wrap tr td.name .tooltip-box {display: flex; gap: var(--gap-3);}
+.admin_02_02 .role-list .krds-table-wrap tr td.name .tooltip-contents {margin-top: 0; width: 100%; gap: 1.6rem;}
+.admin_02_02 .role-list .krds-table-wrap tr td.name .krds-contextual-help .tooltip-popover .tooltip-close {position: relative; top: 0; left: 0; flex: none; box-shadow: none; border: none;}
+.admin_02_02 .role-list .krds-table-wrap tr td.name .krds-contextual-help .tooltip-popover .tooltip-close:after {content: ""; position: absolute; border-radius: 5px; top: 50%; left: 50%; width: calc(100% + 5px); height: calc(100% + 5px); transform: translate(-50%, -50%); background: var(--color-light-secondary-10); opacity: 0; z-index: -1; transition: .5s ease;}
+.admin_02_02 .role-list .krds-table-wrap tr td.name .tooltip-contents .name-box {display: flex; align-items: center; gap: 8px;}
+.admin_02_02 .role-list .krds-table-wrap tr td.name .tooltip-contents .name-box .name {font-size: 19px; font-weight: 500; line-height: 150%; letter-spacing: var(--typo-letter-spacing-0);}
+.admin_02_02 .role-list .krds-table-wrap tr td.name .button-box .krds-btn .svg-icon {background-color: var(--color-icon-primary);}
+
+
+.admin_02_02 > .flex-box .box:first-child {flex: none; width: 45%;}
+.admin_02_02 .flex-box .box:first-child .krds-table-wrap tbody tr {cursor: pointer;}
+.admin_02_02 .flex-box .box:first-child .krds-table-wrap tbody tr.active > * {background: var(--Context-surface-primary-subtler); color: var(--Context-text-primary);}
+.admin_02_02 .flex-box .box:last-child {width: calc(100% - 45% - (var(--gap-6) / 2))}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap.no-click {overflow: hidden !important;}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap.no-click .tbl.data {min-width: auto !important;}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap {height: 100%;}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap table {height: 100%;}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap:not(.no-click) tr.no-data {display: none;}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap.no-click table {border-bottom: none;}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap.no-click tr:not(.no-data) {display: none;}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap tr.no-data {border: none !important;}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap tr.no-data td {color: var(--Context-text-disabled) !important; font-size: var(--font-size-label-large) !important; font-weight: 500 !important; text-align: center !important; border: none !important;}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap tr.disabled > * {background: var(--Context-surface-gray-subtler);}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap tr.disabled > *:not(:has(.krds-form-toggle-switch)) {color: var(--Context-text-disabled);}
+.admin_02_02 .flex-box .box:last-child .krds-table-wrap tr.no-data td:before {display: none;}
+#modal_admin_02_user_add .modal-dialog .modal-conts {align-items: unset;}
+#modal_admin_02_user_add .modal-conts .border-box {padding: var(--padding-6) var(--padding-8); border-radius: var(--radius-xlarge4);  border: 1px solid var(--Context-border-secondary-light); display: flex; flex-direction: column; gap: var(--gap-4);}
+#modal_admin_02_user_add .modal-conts .border-box .box-top-title {display: flex; justify-content: space-between;}
+#modal_admin_02_user_add .modal-conts .border-box .box-top-title .box-title {font-size: var(--font-size-body-large); font-weight: 700;}
+#modal_admin_02_user_add .modal-conts .border-box .krds-table-wrap > table > * > tr > *:first-child {padding: var(--padding-3)}
+#modal_admin_02_user_add .modal-conts .border-box .krds-table-wrap .calendar-conts {display: inline-block; height: var(--krds-button--icon-size-medium); transform: translateY(.5rem);}
+#modal_admin_02_user_add .modal-conts .border-box .krds-table-wrap .calendar-conts:has(.krds-calendar-area.active) {position: relative; z-index: 5;}
+#modal_admin_02_user_add .modal-conts .border-box .krds-table-wrap .krds-form-toggle-switch {color: var(--Context-text-basic)}
+#modal_admin_02_user_add .modal-conts .border-box .no-data {display: flex; align-items: center; justify-content: center; color: var(--Context-text-disabled); font-size: var(--font-size-label-large); font-weight: 500; height: 100%; min-height: 25rem;}
+#modal_admin_02_user_add .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl caption {top: 3.6rem;}
+#modal_admin_02_user_add .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl th {padding-bottom: 2.3rem; height: 5rem;}
+
+#modal_admin_02_add .form-group .form-conts-wrap .select-list > li > .krds-form-check, #modal_admin_02_add .form-group .form-conts-wrap .select-list .dep1 > li:not(:last-child) {border-bottom: 1px solid var(--Context-divider-gray-light); padding-bottom: var(--gap-4);}
+
+.admin_03_01 .search-table-wrap .krds-table-wrap {overflow-x: auto;}
+.admin_03_01 .search-table-wrap .krds-table-wrap .tbl {min-width: 1000px;}
+#modal_admin_03_department .modal-dialog .modal-conts .menu-list {padding: var(--padding-3, 8px) var(--padding-6); display: flex; flex-direction: column; gap: var(--gap5); border-radius: var(--radius-medium2); border: var(--border-width-variable-regular) solid var(--Context-input-border); background: var(--Context-input-surface); overflow-y: auto;}
+#modal_admin_03_department .modal-dialog .modal-conts .menu-list.list1 > li > button {border-radius: var(--radius-medium4); font-weight: 700; font-size: var(--font-size-heading-xsmall); padding: var(--padding-2) var(--padding-5); height: auto;}
+#modal_admin_03_department .modal-dialog .modal-conts .menu-list.list1 > li.active > button {background: var(--color-light-secondary-10); color: var(--Context-text-basic)}
+#modal_admin_03_department .modal-dialog .modal-conts .menu-list.list1 > li.active > button:before {background-color: var(--Context-icon-gray);}
+#modal_admin_03_department .modal-dialog .modal-conts .menu-list button.active {color: #0b78cb;}
+#modal_admin_03_department .modal-dialog .modal-conts .menu-list button.active:before {background-color: #0b78cb;}
+.admin_04_01 > .flex-box .box {width: calc((100% - var(--gap-10) - var(--gap-6) - var(--gap-6)) / 2)}
+.admin_04_01 > .flex-box .box .top-flex .left-box .ico-user-01 {width: var(--krds-icon--size-small); height: var(--krds-icon--size-small);}
+.admin_04_01 > .flex-box .box .top-flex .left-box .box-title {font-size: var(--font-size-heading-xsmall);}
+.admin_04_01 > .flex-box .box .krds-table-wrap tr > *:first-child {padding: var(--padding-3);}
+.admin_04_01 > .button-box {justify-content: flex-end; margin-top: var(--gap-9);}
+.admin_04_01 > .flex-box .krds-table-wrap {width: 100%;}
+.admin_04_01 > .flex-box .krds-table-wrap .krds-badge {width: 8rem; display: flex; align-items: center; font-weight: 500; margin: 0 auto;}
+
+.admin_05_01 .search-table-wrap .krds-table-wrap {overflow-x: auto;}
+.admin_05_01 .search-table-wrap .krds-table-wrap .tbl {min-width: 1000px;}
+
+#modal_admin_07_write .modal-conts .form-group.link .form-conts.is-information + .form-hint-information {display: none;}
+#modal_admin_07_write .modal-conts .form-group.link .form-conts.is-information:has(input:focus) + .form-hint-information {display: flex;}
+#modal_admin_07_edit .modal-conts .form-group.link .form-conts.is-information + .form-hint-information {display: none;}
+#modal_admin_07_edit .modal-conts .form-group.link .form-conts.is-information:has(input:focus) + .form-hint-information {display: flex;}
+#modal_admin_07_preview .modal-conts {padding: var(--krds-modal--header-padding-top) var(--padding-card-small) var(--padding-card-small);}
+
+.admin_08_01 .project-list .krds-table-wrap td .krds-badge {font-weight: 500; width: 5.8rem;}
+
+#modal_admin_08_view.krds-modal .modal-content .fieldset .form-tit label {color: var(--Context-text-subtle);}
+#modal_admin_08_view .modal-conts {gap: var(--gap-5)}
+#modal_admin_08_view .modal-conts .form-group .form-tit:has(*:nth-child(2)) {display: flex; align-items: center; justify-content: space-between;}
+#modal_admin_08_view .modal-conts .form-group .form-conts.border {padding: var(--padding-6); border-radius: var(--radius-medium2); border: var(--border-width-variable-regular) solid var(--color-light-gray-60); background: var(--Context-surface-white)}
+#modal_admin_08_view .modal-conts .form-group .form-conts.border li {align-items: center; width: 100%;}
+#modal_admin_08_view .modal-conts .form-group.tag .form-conts.border li {align-items: flex-start;}
+#modal_admin_08_view .modal-conts .form-group.tag .form-conts.border li > p {margin-top: .4rem;}
+#modal_admin_08_view .modal-conts .form-group.tag .form-conts {gap: var(--gap-4) var(--gap-6); flex-direction: row; flex-wrap: wrap;}
+#modal_admin_08_view .modal-conts .form-group.tag .krds-badge-wrap {gap: var(--gap-4) var(--gap-3); flex-wrap: wrap;}
+#modal_admin_08_view .modal-conts .form-group.tag .krds-badge-box {display: flex; align-items: center; gap: var(--gap-2)}
+#modal_admin_08_view .modal-conts .form-group.tag .krds-badge-box .krds-badge {border: 1px solid var(--input-border); color: var(--Context-text-subtle);}
+
+
+
+
+@media screen and (min-width: 1025px) {
+	.admin_02_02 .role-list .krds-table-wrap tr td.name .krds-contextual-help .tooltip-popover .tooltip-close:hover:after {opacity: 1;}
+}
+
+@media screen and (max-width: 767px) {
+
+  .admin_02_02 .flex-box .box:last-child .krds-table-wrap tr.no-data td {display: flex; align-items: center; justify-content: center;}
+
+	.admin_02_02 .top-admin .krds-table-wrap .tbl.data tr {display: flex; flex-wrap: wrap; gap: 0; flex-direction: row; padding: 0; border: none !important;}
+	.admin_02_02 .top-admin .krds-table-wrap .tbl.data tr > * {width: 100%; display: block; padding: var(--padding-3) !important;}
+
+	.admin_02_02 .role-list .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "번호";}
+	.admin_02_02 .role-list .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "관리자명";}
+	.admin_02_02 .role-list .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "아이디";}
+	.admin_02_02 .role-list .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "접근범위";}
+	.admin_02_02 .role-list .krds-table-wrap .tbl.data tbody tr > *:nth-child(5):before {content: "접근범위";}
+	.admin_02_02 .role-list .krds-table-wrap .tbl.data tbody tr > *:nth-child(6):before {content: "작업";}
+	.admin_02_02 .role-list .krds-table-wrap .tbl.data tbody tr:not(:has(th)) > *:nth-child(1):before {content: "접근범위";}
+	.admin_02_02 .role-list .krds-table-wrap .tbl.data tbody tr:not(:has(th)) > *:nth-child(2):before {content: "접근범위";}
+	.admin_02_02 .role-list .krds-table-wrap .tbl.data tbody tr:not(:has(th)) > *:nth-child(3):before {content: "작업";}
+
+  
+	.admin_02_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "번호";}
+	.admin_02_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "역할명";}
+	.admin_02_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "접근범위";}
+	.admin_02_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "버튼";}
+
+	.admin_03_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "번호";}
+	.admin_03_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "아이디";}
+	.admin_03_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "사용자명";}
+	.admin_03_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "업무명";}
+	.admin_03_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(5):before {content: "담당부서";}
+	.admin_03_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(6):before {content: "권한등급";}
+	.admin_03_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(7):before {content: "권한기간";}
+	.admin_03_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(8):before {content: "사용자 이메일";}
+	.admin_03_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(9):before {content: "버튼";}
+
+	.admin_03_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "번호";}
+	.admin_03_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "사용자명";}
+	.admin_03_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "직급/직위";}
+	.admin_03_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "부서";}
+	.admin_03_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(5):before {content: "소속기관";}
+	.admin_03_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(6):before {content: "전화번호";}
+	.admin_03_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(7):before {content: "권한기간";}
+
+
+	.admin_04_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "번호";}
+	.admin_04_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "업무공간명";}
+	.admin_04_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "인수인계일";}
+	.admin_04_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "인계자";}
+	.admin_04_02 .krds-table-wrap .tbl.data tbody tr > *:nth-child(5):before {content: "인수자";}
+
+	.admin_05_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "번호";}
+	.admin_05_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "유형";}
+	.admin_05_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "발생일시";}
+	.admin_05_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "대상자";}
+	.admin_05_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(5):before {content: "메세지";}
+
+	.admin_06_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "번호";}
+	.admin_06_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "제목";}
+	.admin_06_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "작성자";}
+	.admin_06_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "등록일";}
+	.admin_06_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(5):before {content: "작업";}
+
+	.admin_07_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "번호";}
+	.admin_07_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "제목";}
+	.admin_07_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "작성자";}
+	.admin_07_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "등록일";}
+	.admin_07_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(5):before {content: "활성상태";}
+	.admin_07_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(6):before {content: "작업";}
+
+	.admin_08_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "과제명";}
+	.admin_08_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "업무공간명";}
+	.admin_08_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "담당부서";}
+	.admin_08_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "활성상태";}
+	.admin_08_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(5):before {content: "등록일";}
+
+	.admin_09_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(1):before {content: "번호";}
+	.admin_09_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(2):before {content: "제목";}
+	.admin_09_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(3):before {content: "작성자";}
+	.admin_09_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(4):before {content: "등록일";}
+	.admin_09_01 .krds-table-wrap .tbl.data tbody tr > *:nth-child(5):before {content: "작업";}
+	 
+}

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>행정안전부 지능형 플랫폼</title>	
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../common/nice-select/css/nice-select.css">
+	<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../common/css/token.css">
+	<link rel="stylesheet" href="../common/css/project.css">
+	<script src="../common/js/jquery-3.6.3.js"></script>
+	<script scr="../common/js/jquery.nice-select.js"></script>
+	<script src="../common/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../common/js/common.js"></script>
+	<script src="../common/js/project.js"></script>
+	<script src="../common/js/krds.min.js"></script>
+
+</head>
+<body>
+	<div id="wrap" class="project">
+		<!-- 본문 바로가기 영역  -->
+		<div id="krds-skip-link" class="type1">
+			<a href="#breadcrumb">본문 바로가기</a>
+		</div>
+		<!-- //본문 바로가기 영역  -->
+		<!-- 헤더 영역 -->
+		<header id="krds-header" class="sample">
+			<!-- 헤더 컨텐츠 영역  -->
+			<div class="header-in">
+				<!-- 헤더 상단 기타메뉴 -->
+				<div class="header-container">
+					<div class="inner">
+						<div class="header-utility">
+							<ul class="utility-list">
+								<li>
+									<button type="button" class="krds-btn small text open-modal" data-target="modal_adjust_display">
+										<i class="svg-icon ico-bell-02"></i> 알림
+									</button>
+								</li>
+								<li>
+									<div class="krds-drop-wrap">
+										<button type="button" class="krds-btn small text">
+											<i class="svg-icon ico-setting"></i> 관리자 공간
+										</button>
+									</div>
+								</li>
+								<li>
+									<div class="krds-drop-wrap my-drop profile">
+										<button type="button" class="my drop-btn">홍</button>
+										<div class="drop-menu">
+											<div class="drop-in">
+												<div class="drop-top">
+													<p class="my-name">홍길동님</p>
+													<dl class="my-time">
+														<dt>로그아웃까지 남은 시간</dt>
+														<dd>
+															<span class="time">12:00</span>
+															<button type="button" class="krds-btn small text h-auto">시간 연장</button>
+														</dd>
+													</dl>
+												</div>
+												<ul class="drop-list">
+													<li><a href="#" class="item-link">나의 GOV 홈</a></li>
+													<li><a href="#" class="item-link">나의 신청내역</a></li>
+													<li><a href="#" class="item-link">나의 생활정보</a></li>
+													<li><a href="#" class="item-link">나의 정보관리</a></li>
+												</ul>
+												<div class="drop-bottom">
+													<button type="button" class="krds-btn small text"><i class="svg-icon ico-logout"></i> 로그아웃</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="header-branding">
+							<div class="logo-wrap">	
+								<h2 class="logo">
+									<a href="#" class="mois">
+										<span class="sr-only">행정안전부</span>
+									</a>
+									<p class="logo-text">지능형 업무관리 플랫폼</p>
+								</h2>
+							</div>	
+
+							<!-- 메인메뉴 : 데스크탑 -->
+							<nav class="krds-main-menu">
+								<ul class="gnb-menu">
+									<li>
+										<button type="button" class="gnb-main-trigger" data-trigger="gnb">홈</button>
+									</li>
+									<li>
+										<button type="button" class="gnb-main-trigger focus" data-trigger="gnb">업무공간</button>
+									</li>
+									<li>
+										<button type="button" class="gnb-main-trigger" data-trigger="gnb">AI 행정</button>
+									</li>
+								</ul>
+							</nav>
+
+							<!-- //메인메뉴 : 데스크탑 -->
+							<div class="header-actions">
+								<button type="button" class="btn-navi color-chat"><span class="sr-only">채팅</span></button>
+								<a href="#" class="btn-navi color-mail"><span class="sr-only">메세지</span></a>
+								<button type="button" class="btn-navi color-drive"><span class="sr-only">폴더</span></button>
+								<button type="button" class="btn-navi color-meeting"><span class="sr-only">비디오</span></button>
+								<button type="button" class="btn-navi color_docs"><span class="sr-only">Docs</span></button>
+								<button type="button" class="btn-navi color_ara"><span class="sr-only">ARA</span></button>
+                                <button type="button" class="btn-navi grid"><i class="svg-icon ico-grid-01"></i><span class="sr-only">메뉴</span></button>
+								<button type="button" class="btn-navi navi-row all" aria-controls="mobile-nav"><span>전체메뉴</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //헤더 상단 기타메뉴 -->
+			</div>
+			<!-- //헤더 컨텐츠 영역  -->
+			<!-- 메인메뉴 : 모바일 -->
+			<div id="mobile-nav" class="krds-main-menu-mobile">
+				<div class="gnb-wrap">
+					<!-- gnb-header -->
+					<div class="gnb-header">
+            <div class="gnb-utils">
+              <ul class="utility-list">
+                <li class="disable">
+                  <button type="button" class="krds-btn small text open-modal" data-target="modal_adjust_display">
+                    <i class="svg-icon ico-bell-02"></i> 알림
+                  </button>
+                </li>
+                <li>
+                  <div class="krds-drop-wrap">
+                    <button type="button" class="krds-btn small text">
+                      <i class="svg-icon ico-setting"></i> 관리자 공간
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="gnb-login">
+               <span class="user">홍길동님</span>
+              <button type="button" class="krds-btn large text"><i class="svg-icon ico-logout"></i> 로그아웃</button>
+            </div>
+						<div class="gnb-service-menu">
+							<button type="button" class="btn-navi color-chat"><span class="sr-only">채팅</span></button>
+							<a href="#" class="btn-navi color-mail"><span class="sr-only">메세지</span></a>
+							<button type="button" class="btn-navi color-drive"><span class="sr-only">폴더</span></button>
+							<button type="button" class="btn-navi color-meeting"><span class="sr-only">비디오</span></button>
+							<button type="button" class="btn-navi color_docs"><span class="sr-only">Docs</span></button>
+							<button type="button" class="btn-navi color_ara"><span class="sr-only">ARA</span></button>
+                            <button type="button" class="btn-navi grid"><i class="svg-icon ico-grid-01"></i><span class="sr-only">메뉴</span></button>
+						</div>
+						<!-- gnb-service-menu -->
+						<!-- 검색 -->
+						<div class="sch-input">
+							<input type="text" class="krds-input" placeholder="찾고자 하는 메뉴명을 입력해 주세요" title="찾고자 하는 메뉴명 입력" />
+							<button type="button" class="krds-btn small icon ico-search">
+								<span class="sr-only">검색</span>
+								<i class="svg-icon ico-sch"></i>
+							</button>
+						</div>
+						<!-- //검색 -->
+					</div>
+					<!-- //gnb-header -->
+					<!-- gnb-body -->
+					<!-- gnb-body -->
+					<div class="gnb-body">
+						<!-- gnb-menu -->
+						<div class="gnb-menu">
+							<div class="menu-wrap">
+								<ul role="tablist">
+									<li role="none">
+										<a href="#mGnb-anchor1" class="gnb-main-trigger" role="tab" aria-selected="false" aria-controls="mGnb-anchor1" id="tab-0">홈</a>
+									</li>
+									<li role="none">
+										<a href="#mGnb-anchor2" class="gnb-main-trigger" role="tab" aria-selected="false" aria-controls="mGnb-anchor2" id="tab-1">업무공간</a>
+									</li>
+									<li role="none">
+										<a href="#mGnb-anchor3" class="gnb-main-trigger" role="tab" aria-selected="false" aria-controls="mGnb-anchor3" id="tab-2">AI 행정</a>
+									</li>
+								</ul>
+							</div>
+							<div class="submenu-wrap">
+								<div class="gnb-sub-list" id="mGnb-anchor1" role="tabpanel" aria-labelledby="tab-0">
+									<h2 class="sub-title">홈</h2>
+								</div>
+								<div class="gnb-sub-list" id="mGnb-anchor2" role="tabpanel" aria-labelledby="tab-1">
+									<h2 class="sub-title">업무공간</h2>
+								</div>
+								<div class="gnb-sub-list" id="mGnb-anchor3" role="tabpanel" aria-labelledby="tab-2">
+									<h2 class="sub-title">AI 행정</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //gnb-body -->
+
+					<!-- gnb-close -->
+					<button type="button" class="krds-btn small icon" id="close-nav">
+						<span class="sr-only">전체메뉴 닫기</span>
+						<i class="svg-icon ico-popup-close"></i>
+					</button>
+					<!-- //gnb-close -->
+				</div>
+			</div>
+
+			<!-- //메인메뉴 : 모바일 -->
+			<!-- //메인메뉴 : 모바일 -->
+		</header>
+		<!-- //헤더 영역 -->
+		<div id="container" class="container">
+			<!-- 사이드 메뉴 -->
+      <nav class="krds-side-navigation">
+          <div class="admin_title">
+          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+              <div class="krds-contextual-help right bottom">
+                  <div class="tooltip-action">
+                  <button type="button" class="tooltip-btn"><p class="name">25년도 공공 AI 정책 포럼</p><i class="svg-icon ico-chevron-selector-vertical"></i></button>
+                  <div class="tooltip-popover" role="tooltip">
+                      <div class="profile-select">
+                          <button type="button" class="list-file active">
+                          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+                          <div class="textBox">
+                              <p class="name">25년도 공공 AI 정책 포럼</p>
+                              <p class="text">42명의 멤버</p>
+                          </div>
+                          </button>
+                          <button type="button" class="list-file">
+                          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+                          <div class="textBox">
+                              <p class="name">25년도 공공 AI 정책 포럼</p>
+                              <p class="text">42명의 멤버</p>
+                          </div>
+                          </button>
+                          <button type="button" class="list-file">
+                          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+                          <div class="textBox">
+                              <p class="name">25년도 공공 AI 정책 포럼</p>
+                              <p class="text">42명의 멤버</p>
+                          </div>
+                          </button>
+                          <button type="button" class="list-file">
+                          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+                          <div class="textBox">
+                              <p class="name">25년도 공공 AI 정책 포럼</p>
+                              <p class="text">42명의 멤버</p>
+                          </div>
+                          </button>
+                      </div>
+                      <div class="bot-box">
+                          <button type="button" class="list-file krds-btn text">
+                          <i class="svg-icon ico-dataflow-02"></i> 업무공간 트리
+                          </button>
+                          <button type="button" class="list-file krds-btn text">
+                          <i class="svg-icon ico-plus-square"></i> 업무공간추가
+                          </button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <div class="navigation-wrap">
+              <button type="button" class="krds-btn small text navBtn">
+              <i class="svg-icon ico-git-branch-01"></i><p class="sr-only">메뉴 열기</p>
+              </button>
+              <!-- 열려있는 페이지에 now 클래스 추가해주세요 (최종 li) -->
+              <ul class="navigation">
+              <li>
+                  <div class="lnb-tit"><p>Page Tree</p><button type="button" class="svg-icon plusBtn ico-plus"></button></div>
+                  <ul class="lnb-list">
+                      <li class="lnb-item" role="none">
+                      <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>[취합] 2025년 여름철 폭염 대책 점검 TF</p>
+                          <div class="right-btn-box">
+                          <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                          <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                      </button>
+                      </li>
+                      <li class="lnb-item" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>여름철 식중독 대책</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                      <li class="lnb-item" role="none">
+                      <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>여름철 태풍 대책</p>
+                          <div class="right-btn-box">
+                          <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                          <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                      </button>
+                      </li>
+                      <li class="lnb-item active" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>여름철 폭염 대책</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem active" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>2025년 여름철 폭염 대책</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                                  <div class="lnb-submenu2-wrap active">
+                                  <ul>
+                                      <li class="lnb-subitem2 active now" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>폭염대책사례</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>폭염 현황</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  </div>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>2025년 여름철 폭염 대책</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                                  <div class="lnb-submenu2-wrap">
+                                  <ul>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>폭염대책사례</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>폭염 현황</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  </div>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>2023년 여름철 폭염 대책</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                      <li class="lnb-item" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>[취합] 임시업무 취합 페이지</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>임시업무 페이지 1</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                                  <div class="lnb-submenu2-wrap">
+                                  <ul>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>임시업무 페이지 1-1</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>임시업무 페이지 1-2</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  </div>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>임시업무 페이지 2</p>                                  
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                                  <div class="lnb-submenu2-wrap">
+                                  <ul>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>임시업무 페이지 2-1</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>임시업무 페이지 2-2</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  </div>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>임시업무 페이지 3</p>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                      <li class="lnb-item" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>[취합] 샘플업무 취합 페이지</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>샘플업무 페이지 1</p>            
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>                    
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>샘플업무 페이지 2</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                      <li class="lnb-item" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>@old</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>@old 페이지 1</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>@old 페이지 2</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+              </ul>	
+          </div>
+          <div class="bot-setting">
+          <div class="top">
+              <button type="button" class="krds-btn small text trashBtn">
+              <i class="svg-icon ico-info-hexagon"></i><p>업무공간 정보</p>
+              </button>
+              <button type="button" class="krds-btn small text trashBtn">
+              <i class="svg-icon ico-list"></i><p>AI색인 목록</p>
+              </button>
+              <button type="button" class="krds-btn small text trashBtn">
+              <i class="svg-icon ico-edit-05"></i><p>연계 기안</p>
+              </button>
+          </div>
+          <div class="left button-box">
+              <button type="button" class="krds-btn small text trashBtn">
+              <i class="svg-icon ico-trash-01_solid"></i><p>휴지통</p>
+              </button>
+              <button type="button" class="krds-btn small text settingBtn">
+              <i class="svg-icon ico-settings-02_solid"></i><p>공간도구</p>
+              </button>
+          </div>
+          <button type="button" class="krds-btn medium text foldBtn"><i class="svg-icon ico-chevron-left-double gray-light"></i></button>
+          </div>
+      </nav>
+			<!-- //사이드 메뉴 -->
+
+			<div class="contents project_attach_list">
+				<div class="title">
+          <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="home"><a href="#" class="txt">홈</a></li>
+                <li><a href="#" class="txt">업무공간</a></li>
+                <li><a href="#" class="txt">2025년 여름철 폭염 대책 점검 TF</a></li>
+                <li><a href="#" class="txt">업무공간 정보</a></li>
+                <li><a href="#" class="txt">첨부파일 목록</a></li>
+            </ol>
+          </nav>
+					<div class="component-header">
+						<div class="text">
+							<p class="main-msg">첨부파일 목록</p>
+						</div>
+					</div>
+				</div>
+        <div class="search-table-wrap">
+          <form class="search-top-box">
+            <div class="sch-form-wrap">
+                <div class="sch-input">
+                <div class="select-box">
+                    <select id="select_sorting" class="krds-form-select-sort" title="주제 검색">
+                    <option value="파일명">파일명</option>
+                    <option value="등록자">등록자</option>
+                    </select>
+                </div>
+                <div class="form-conts">
+                    <input type="text" id="keyword_search" class="krds-input" placeholder="내용을 입력하세요." title="내용 입력">
+                    <button type="button" class="krds-btn medium icon ico-search btn-exec">
+                    <span class="sr-only">검색</span>
+                    <i class="svg-icon ico-sch"></i>
+                    </button>
+                </div>
+                </div>
+            </div>
+          </form>
+          <div class="list table-board-wrap">
+            <div class="total-wrap">
+              <div class="left-box">
+                <div class="total"><p>전체 <strong class="num">999</strong>개</p></div>
+                <!-- 폼그룹 -->
+                <div class="form-group">
+                  <div class="form-tit">
+                    <label for="select_name">목록 표시 개수</label>
+                  </div>
+                  <div class="form-conts">
+                    <select id="select_name" class="krds-form-select" title="선택">
+                      <option value="10개">10개</option>
+                      <option value="20개">20개</option>
+                      <option value="30개">30개</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="krds-table-wrap">
+              <table class="tbl col data">
+                <caption> 첨부파일 목록에 대한 표로  제목, 등록자, 첨부일, 크기, 위치 링크, AI 색인 에 대한 내용으로 구성되어있다.</caption>
+                <colgroup>
+                  <col style="width: 4.3%;">
+                  <col>
+                  <col style="width: 8.6%;">
+                  <col style="width: 9.3%;">
+                  <col style="width: 8.6%;">
+                  <col style="width: 29.3%;">
+                  <col style="width: 100px;">
+                </colgroup>
+                <thead>
+
+                  <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">등록자</th>
+                    <th scope="col">첨부일</th>
+                    <th scope="col">크기</th>
+                    <th scope="col">위치 링크</th>
+                    <th scope="col">AI 색인</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td scope="row">2025년 여름철 종합 대책_최종_250724.hwpx</td>
+                    <td scope="row">김행정</td>
+                    <td scope="row">2025-06-26</td>
+                    <td scope="row">504MB</td>
+                    <td scope="row"><a href="javascript:;">[취합] 2025년 여름철 폭염 대책 점검 TF<div class="svg-icon ico-share-03"></div></a></td>
+                    <td scope="row"><span class="krds-badge bg-light-information">색인</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td scope="row">2025년 여름철 종합 대책_최종_250724.hwpx</td>
+                    <td scope="row">김행정</td>
+                    <td scope="row">2025-06-26</td>
+                    <td scope="row">504MB</td>
+                    <td scope="row"><a href="javascript:;">[취합] 2025년 여름철 폭염 대책 점검 TF<div class="svg-icon ico-share-03"></div></a></td>
+                    <td scope="row"><span class="krds-badge bg-light-disabled">미색인</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //table -->
+            <div class="pagination-wrap">
+                <!-- pagination -->
+                <div class="krds-pagination">
+                  <span class="page-navi prev disabled" href="#">이전</span>
+                  <div class="page-links">
+                    <a class="page-link active" href="#">1</a>
+                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="#">3</a>
+                    <a class="page-link" href="#"><span class="sr-only">현재페이지 </span>4</a>
+                    <a class="page-link" href="#">5</a>
+                    <a class="page-link" href="#">6</a>
+                    <a class="page-link" href="#">7</a>
+                    <a class="page-link" href="#">8</a>
+                    <span class="page-link link-dot"></span>
+                    <a class="page-link" href="#">99</a>
+                  </div>
+                  <a class="page-navi next" href="#">다음</a>
+                </div>
+                <!-- //pagination -->
+                <div class="pagination-text">
+                  <div class="text-wrap">
+                    <div class="form-group">
+                      <div class="form-conts">
+                        <label><input type="text" id="page_num" class="krds-input" value="1"></label>
+                      </div>
+                    </div>
+                    <p class="total">/22</p>
+                  </div>
+                  <button type="button" class="krds-btn small secondary">&nbsp;이동&nbsp;</button>
+                </div>
+            </div>
+          </div>
+        </div>
+			</div>
+			<!-- //컨텐츠 영역 -->
+		</div>
+
+	</div>
+</body>
+</html>

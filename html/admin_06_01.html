@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>행정안전부 지능형 플랫폼</title>	
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../common/nice-select/css/nice-select.css">
+	<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../common/css/admin.css">
+	<link rel="stylesheet" href="../common/css/token.css">
+	<script src="../common/js/jquery-3.6.3.js"></script>
+	<script scr="../common/js/jquery.nice-select.js"></script>
+	<script src="../common/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../common/js/common.js"></script>
+	<script src="../common/js/admin.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
+</head>
+<body>
+	<div id="wrap" class="admin">
+		<!-- 본문 바로가기 영역  -->
+		<div id="krds-skip-link" class="type1">
+			<a href="#breadcrumb">본문 바로가기</a>
+		</div>
+		<!-- //본문 바로가기 영역  -->
+		<!-- 헤더 영역 -->
+		<header id="krds-header" class="sample">
+			<!-- 헤더 컨텐츠 영역  -->
+			<div class="header-in">
+				<!-- 헤더 상단 기타메뉴 -->
+				<div class="header-container">
+					<div class="inner">
+						<div class="header-utility">
+							<ul class="utility-list">
+								<li>
+									<button type="button" class="krds-btn small text open-modal" data-target="modal_adjust_display">
+										<i class="svg-icon ico-bell-02"></i> 알림
+									</button>
+								</li>
+								<li>
+									<div class="krds-drop-wrap">
+										<button type="button" class="krds-btn small text">
+											<i class="svg-icon ico-setting"></i> 관리자 공간
+										</button>
+									</div>
+								</li>
+								<li>
+									<div class="krds-drop-wrap my-drop profile">
+										<button type="button" class="my drop-btn">홍</button>
+										<div class="drop-menu">
+											<div class="drop-in">
+												<div class="drop-top">
+													<p class="my-name">홍길동님</p>
+													<dl class="my-time">
+														<dt>로그아웃까지 남은 시간</dt>
+														<dd>
+															<span class="time">12:00</span>
+															<button type="button" class="krds-btn small text h-auto">시간 연장</button>
+														</dd>
+													</dl>
+												</div>
+												<ul class="drop-list">
+													<li><a href="#" class="item-link">나의 GOV 홈</a></li>
+													<li><a href="#" class="item-link">나의 신청내역</a></li>
+													<li><a href="#" class="item-link">나의 생활정보</a></li>
+													<li><a href="#" class="item-link">나의 정보관리</a></li>
+												</ul>
+												<div class="drop-bottom">
+													<button type="button" class="krds-btn small text"><i class="svg-icon ico-logout"></i> 로그아웃</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="header-branding">
+							<div class="logo-wrap">	
+								<h2 class="logo">
+									<a href="#" class="mois">
+										<span class="sr-only">행정안전부</span>
+									</a>
+									<p class="logo-text">지능형 업무관리 플랫폼</p>
+								</h2>
+							</div>	
+
+							<!-- 메인메뉴 : 데스크탑 -->
+							<nav class="krds-main-menu">
+								<ul class="gnb-menu">
+									<li>
+										<button type="button" class="gnb-main-trigger" data-trigger="gnb">홈</button>
+									</li>
+									<li>
+										<button type="button" class="gnb-main-trigger" data-trigger="gnb">업무공간</button>
+									</li>
+									<li>
+										<button type="button" class="gnb-main-trigger" data-trigger="gnb">AI 행정</button>
+									</li>
+								</ul>
+							</nav>
+
+							<!-- //메인메뉴 : 데스크탑 -->
+							<div class="header-actions">
+								<button type="button" class="btn-navi color-chat"><span class="sr-only">채팅</span></button>
+								<a href="#" class="btn-navi color-mail"><span class="sr-only">메세지</span></a>
+								<button type="button" class="btn-navi color-drive"><span class="sr-only">폴더</span></button>
+								<button type="button" class="btn-navi color-meeting"><span class="sr-only">비디오</span></button>
+								<button type="button" class="btn-navi color_docs"><span class="sr-only">Docs</span></button>
+								<button type="button" class="btn-navi color_ara"><span class="sr-only">ARA</span></button>
+                                <button type="button" class="btn-navi grid"><i class="svg-icon ico-grid-01"></i><span class="sr-only">메뉴</span></button>
+								<button type="button" class="btn-navi navi-row all" aria-controls="mobile-nav"><span>전체메뉴</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //헤더 상단 기타메뉴 -->
+			</div>
+			<!-- //헤더 컨텐츠 영역  -->
+			<!-- 메인메뉴 : 모바일 -->
+			<div id="mobile-nav" class="krds-main-menu-mobile">
+				<div class="gnb-wrap">
+					<!-- gnb-header -->
+					<div class="gnb-header">
+            <div class="gnb-utils">
+              <ul class="utility-list">
+                <li class="disable">
+                  <button type="button" class="krds-btn small text open-modal" data-target="modal_adjust_display">
+                    <i class="svg-icon ico-bell-02"></i> 알림
+                  </button>
+                </li>
+                <li>
+                  <div class="krds-drop-wrap">
+                    <button type="button" class="krds-btn small text">
+                      <i class="svg-icon ico-setting"></i> 관리자 공간
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="gnb-login">
+               <span class="user">홍길동님</span>
+              <button type="button" class="krds-btn large text"><i class="svg-icon ico-logout"></i> 로그아웃</button>
+            </div>
+						<div class="gnb-service-menu">
+							<button type="button" class="btn-navi color-chat"><span class="sr-only">채팅</span></button>
+							<a href="#" class="btn-navi color-mail"><span class="sr-only">메세지</span></a>
+							<button type="button" class="btn-navi color-drive"><span class="sr-only">폴더</span></button>
+							<button type="button" class="btn-navi color-meeting"><span class="sr-only">비디오</span></button>
+							<button type="button" class="btn-navi color_docs"><span class="sr-only">Docs</span></button>
+							<button type="button" class="btn-navi color_ara"><span class="sr-only">ARA</span></button>
+                            <button type="button" class="btn-navi grid"><i class="svg-icon ico-grid-01"></i><span class="sr-only">메뉴</span></button>
+						</div>
+						<!-- gnb-service-menu -->
+						<!-- 검색 -->
+						<div class="sch-input">
+							<input type="text" class="krds-input" placeholder="찾고자 하는 메뉴명을 입력해 주세요" title="찾고자 하는 메뉴명 입력" />
+							<button type="button" class="krds-btn small icon ico-search">
+								<span class="sr-only">검색</span>
+								<i class="svg-icon ico-sch"></i>
+							</button>
+						</div>
+						<!-- //검색 -->
+					</div>
+					<!-- //gnb-header -->
+					<!-- gnb-body -->
+					<!-- gnb-body -->
+					<div class="gnb-body">
+						<!-- gnb-menu -->
+						<div class="gnb-menu">
+							<div class="menu-wrap">
+								<ul role="tablist">
+									<li role="none">
+										<a href="#mGnb-anchor1" class="gnb-main-trigger" role="tab" aria-selected="false" aria-controls="mGnb-anchor1" id="tab-0">홈</a>
+									</li>
+									<li role="none">
+										<a href="#mGnb-anchor2" class="gnb-main-trigger" role="tab" aria-selected="false" aria-controls="mGnb-anchor2" id="tab-1">업무공간</a>
+									</li>
+									<li role="none">
+										<a href="#mGnb-anchor3" class="gnb-main-trigger" role="tab" aria-selected="false" aria-controls="mGnb-anchor3" id="tab-2">AI 행정</a>
+									</li>
+								</ul>
+							</div>
+							<div class="submenu-wrap">
+								<div class="gnb-sub-list" id="mGnb-anchor1" role="tabpanel" aria-labelledby="tab-0">
+									<h2 class="sub-title">홈</h2>
+								</div>
+								<div class="gnb-sub-list" id="mGnb-anchor2" role="tabpanel" aria-labelledby="tab-1">
+									<h2 class="sub-title">업무공간</h2>
+								</div>
+								<div class="gnb-sub-list" id="mGnb-anchor3" role="tabpanel" aria-labelledby="tab-2">
+									<h2 class="sub-title">AI 행정</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //gnb-body -->
+
+					<!-- gnb-close -->
+					<button type="button" class="krds-btn small icon" id="close-nav">
+						<span class="sr-only">전체메뉴 닫기</span>
+						<i class="svg-icon ico-popup-close"></i>
+					</button>
+					<!-- //gnb-close -->
+				</div>
+			</div>
+
+			<!-- //메인메뉴 : 모바일 -->
+			<!-- //메인메뉴 : 모바일 -->
+		</header>
+		<!-- //헤더 영역 -->
+		<div id="container" class="container">
+			<!-- 사이드 메뉴 -->
+			<nav class="krds-side-navigation">
+				<div class="admin_title"><figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure><p>관리자 공간</p></div>
+				<ul class="navigation">
+					<li>
+						<p class="lnb-tit">시스템 관리</p>
+						<!-- lnb-list -->
+						<ul class="lnb-list">
+							<li class="lnb-item"><a href="javascript:;"><i class="svg-icon ico-admin-01"></i><span>관리자 관리</span></a></li>
+							<li class="lnb-item">                                
+                <a href="javascript:;"><i class="svg-icon ico-admin-02"></i><span>사용자 관리</span></a>
+                <div class="lnb-submenu">
+                    <ul id="lnbmenu-1" role="menu">
+                        <li class="lnb-subitem" role="none">
+                        <button type="button" class="lnb-btn" role="menuitem" aria-controls="lnbmenu-2" aria-expanded="false" aria-haspopup="true">외부 사용자 관리</button>
+                        </li>
+                        <li class="lnb-subitem active" role="none">
+                        <button type="button" class="lnb-btn" role="menuitem" aria-controls="lnbmenu-2" aria-expanded="false" aria-haspopup="true">내부 사용자 목록</button>
+                        </li>
+                    </ul>
+                </div>
+              </li>
+              <li class="lnb-item">
+                <a href="javascript:;"><i class="svg-icon ico-admin-03"></i><span>인수인계 관리</span></a>
+                <div class="lnb-submenu">
+                    <ul id="lnbmenu-1" role="menu">
+                        <li class="lnb-subitem" role="none">
+                        <button type="button" class="lnb-btn" role="menuitem" aria-controls="lnbmenu-2" aria-expanded="false" aria-haspopup="true">인수인계</button>
+                        </li>
+                        <li class="lnb-subitem active" role="none">
+                        <button type="button" class="lnb-btn" role="menuitem" aria-controls="lnbmenu-2" aria-expanded="false" aria-haspopup="true">인수인계 기록</button>
+                        </li>
+                    </ul>
+                </div>
+              </li>
+							<li class="lnb-item"><a href="javascript:;"><i class="svg-icon ico-admin-04"></i><span>로그 기록</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<p class="lnb-tit">컨텐츠 관리</p>
+						<!-- lnb-list -->
+						<ul class="lnb-list">
+							<li class="lnb-item active"><a href="javascript:;"><i class="svg-icon ico-admin-05"></i><span>공지사항 관리</span></a></li>
+							<li class="lnb-item"><a href="javascript:;"><i class="svg-icon ico-admin-09"></i><span>배너 관리</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<p class="lnb-tit">업무 관리</p>
+						<!-- lnb-list -->
+						<ul class="lnb-list">
+							<li class="lnb-item"><a href="javascript:;"><i class="svg-icon ico-admin-06"></i><span>업무공간 관리</span></a></li>
+							<li class="lnb-item"><a href="javascript:;"><i class="svg-icon ico-admin-07"></i><span>기록물 링크 관리</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<p class="lnb-tit">카탈로그 관리</p>
+						<!-- lnb-list -->
+						<ul class="lnb-list">
+							<li class="lnb-item"><a href="javascript:;"><i class="svg-icon ico-admin-08"></i><span>상품목록</span></a></li>
+						</ul>
+					</li>
+				</ul>	
+				<div class="bot-setting">
+					<button type="button" class="krds-btn small text foldBtn"><i class="svg-icon ico-chevron-left-double gray-light"></i></button>
+				</div>
+			</nav>
+			<!-- //사이드 메뉴 -->
+			<div class="contents admin_06_01">
+        <div class="top-title">
+            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="home"><a href="#" class="txt">홈</a></li>
+                    <li><a href="#" class="txt">관리자 공간</a></li>
+                    <li><a href="#" class="txt">공지사항 관리</a></li>
+                </ol>
+            </nav>
+            <div class="title">
+                <div class="component-header">
+                    <div class="text">
+                        <p class="main-msg">공지사항 관리</p>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>시스템/기관 공지사항과 SNS 연동 발송을 관리할 수 있습니다. </p>
+                </div>
+            </div>
+        </div>
+        <div class="search-table-wrap">
+        <form class="search-top-box">
+            <div class="sch-form-wrap">
+            <div class="sch-input">
+                <div class="select-box">
+                <select id="select_sorting" class="krds-form-select-sort" title="주제 검색">
+                    <option value="제목">제목</option>
+                    <option value="작성자">작성자</option>
+                </select>
+                </div>
+                <div class="form-conts">
+                <input type="text" id="keyword_search" class="krds-input" placeholder="내용을 입력하세요." title="내용 입력">
+                <button type="button" class="krds-btn medium icon ico-search btn-exec">
+                    <span class="sr-only">검색</span>
+                    <i class="svg-icon ico-sch"></i>
+                </button>
+                </div>
+            </div>
+            </div>
+        </form>
+        <div class="banner-list table-board-wrap">
+            <div class="main-msg"><p>공지 목록</p></div>
+            <div class="total-wrap">
+            <div class="left-box">
+                <div class="total"><p>전체 <strong class="num">999</strong>개</p></div>
+                <div class="form-group">
+                <div class="form-tit">
+                    <label for="select_name">목록 표시 개수</label>
+                </div>
+                <select id="list_num_select_sorting" class="krds-form-select-sort" title="목록 표시 개수">
+                    <option value="10개">10개</option>
+                    <option value="20개">20개</option>
+                    <option value="30개">30개</option>
+                    <option value="40개">40개</option>
+                </select>
+                </div>
+            </div>
+            <div class="right-box"><button type="button" class="krds-btn xsmall secondary open-modal" data-target="modal_admin_06_write">&nbsp;등록&nbsp;</button></div>
+            </div>
+            <div class="krds-table-wrap">
+            <table class="tbl col data">
+                <caption> 공지 목록에 대한 표로 번호, 제목, 작성자, 등록일 에 대한 내용으로 구성되어있다.</caption>
+                <colgroup>
+                <col style="width: 5.9%;">
+                <col>
+                <col style="width: 13.3%;">
+                <col style="width: 13.3%;">
+                </colgroup>
+                <thead>
+                  <tr>
+                      <th scope="col">번호</th>
+                      <th scope="col">제목</th>
+                      <th scope="col">작성자</th>
+                      <th scope="col">등록일</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="open-modal" data-target="modal_admin_06_edit">
+                      <th scope="row">62</th>
+                      <td scope="row"><a href="javascript:;">시스템 정기점검 안내<div class="svg-icon ico-share-03"></div></a></td>
+                      <td scope="row">김행정</td>
+                      <td scope="row">2025-06-20</td>
+                  </tr>
+                </tbody>
+            </table>
+            </div>
+            <!-- //table -->
+            <div class="pagination-wrap">
+                <!-- pagination -->
+                <div class="krds-pagination">
+                <span class="page-navi prev disabled" href="#">이전</span>
+                <div class="page-links">
+                    <a class="page-link active" href="#">1</a>
+                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="#">3</a>
+                    <a class="page-link" href="#"><span class="sr-only">현재페이지 </span>4</a>
+                    <a class="page-link" href="#">5</a>
+                    <a class="page-link" href="#">6</a>
+                    <a class="page-link" href="#">7</a>
+                    <a class="page-link" href="#">8</a>
+                    <span class="page-link link-dot"></span>
+                    <a class="page-link" href="#">99</a>
+                </div>
+                <a class="page-navi next" href="#">다음</a>
+                </div>
+                <!-- //pagination -->
+                <div class="pagination-text">
+                <div class="text-wrap">
+                    <div class="form-group">
+                    <div class="form-conts">
+                        <label><input type="text" id="page_num" class="krds-input" value="1"></label>
+                    </div>
+                    </div>
+                    <p class="total">/22</p>
+                </div>
+                <button type="button" class="krds-btn small secondary">&nbsp;이동&nbsp;</button>
+                </div>
+            </div>
+        </div>
+        </div>
+			</div>
+			<!-- //컨텐츠 영역 -->
+		</div>
+	</div>
+  <div class="modal-wrap">
+    <section id="modal_admin_06_write"  class="krds-modal fade" role="dialog" aria-labelledby="modal_admin_06_write">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- modal title -->
+            <div class="modal-header">
+                <h2 id="tit_modal_admin_06_write" class="modal-title">
+                공지사항 등록
+                </h2>
+            </div>
+            <!-- //modal title -->
+            <!-- modal contents -->
+            <div class="modal-conts">
+                <!-- text input -->
+                <div class="fieldset">
+                <div class="form-group">
+                    <div class="form-tit">
+                    <label for="title">제목</label>
+                    </div>
+                    <div class="form-conts">
+                    <input type="text" id="title" class="krds-input" placeholder="제목을 작성해주세요">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-tit">
+                    <label for="detail">내용</label>
+                    </div>
+                    <div class="form-conts">
+                    <div class="textarea-wrap">
+                        <textarea class="krds-input" placeholder="내용을 입력해 주세요." id="detail"></textarea>
+                    </div>
+                    </div>
+                </div>
+                <div class="form-group krds-file-upload">
+                  <div class="form-tit">
+                    <p>이미지 첨부</p>
+                  </div>
+                  <div class="form-conts">
+                    <div class="file-upload">
+                        <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요. <span class="red">이미지 파일은 최대 2M으로 제한합니다.(배너크기 918*400px)</span></p>
+                        <div class="file-upload-btn-wrap">
+                        <input type="file" name="myFile" id="img-file-upload" hidden>
+                        <label for="img-file-upload">
+                            <button type="button" class="krds-btn medium"><i class="svg-icon ico-upload"></i>파일선택</button>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="file-list">
+                        <div class="total"><span class="current">3개</span> / 10개</div>
+                        <ul class="upload-list">
+                            <li>
+                                <div class="file-info">
+                                <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
+                                <div class="btn-wrap">
+                                    <span class="krds-spinner" role="status">
+                                    <span class="sr-only">업로드 중</span>
+                                    </span>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-info">
+                                <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
+                                <div class="btn-wrap">
+                                    <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="upload-delete-btn">
+                        <button type="button" class="krds-btn xsmall tertiary">전체 파일 삭제<i class="svg-icon ico-angle right"></i></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group krds-file-upload">
+                  <div class="form-tit">
+                    <p>첨부파일</p>
+                  </div>
+                  <div class="form-conts">
+                    <div class="file-upload">
+                        <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                        <div class="file-upload-btn-wrap">
+                        <input type="file" name="myFile" id="file-upload" hidden>
+                        <label for="file-upload">
+                            <button type="button" class="krds-btn medium"><i class="svg-icon ico-upload"></i>파일선택</button>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="file-list">
+                        <div class="total"><span class="current">3개</span> / 10개</div>
+                        <ul class="upload-list">
+                            <li>
+                                <div class="file-info">
+                                <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
+                                <div class="btn-wrap">
+                                    <span class="krds-spinner" role="status">
+                                    <span class="sr-only">업로드 중</span>
+                                    </span>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-info">
+                                <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
+                                <div class="btn-wrap">
+                                    <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="upload-delete-btn">
+                        <button type="button" class="krds-btn xsmall tertiary">전체 파일 삭제<i class="svg-icon ico-angle right"></i></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- //폼그룹 -->
+                </div>
+                <!-- //text input -->
+            </div>
+            <!-- //modal contents -->
+            <!-- modal btn -->
+            <div class="modal-btn btn-wrap">
+                <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+                <button type="button" class="krds-btn medium primary close-modal">저장</button>
+            </div>
+            <!-- //modal btn -->
+            <!-- close button -->
+            <button type="button" class="krds-btn medium icon btn-close close-modal">
+                <span class="sr-only">닫기</span>
+                <i class="svg-icon ico-popup-close"></i>
+            </button>
+            <!-- //close button -->
+            </div>
+        </div>
+        <div class="modal-back in"></div>
+    </section>
+    <section id="modal_admin_06_edit"  class="krds-modal fade" role="dialog" aria-labelledby="modal_admin_06_edit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- modal title -->
+            <div class="modal-header">
+                <h2 id="tit_modal_admin_06_edit" class="modal-title">
+                상세보기
+                </h2>
+            </div>
+            <!-- //modal title -->
+            <!-- modal contents -->
+            <div class="modal-conts">
+                <!-- text input -->
+                <div class="fieldset">
+                <div class="form-group">
+                    <div class="form-tit">
+                    <label for="title">업무공간명</label>
+                    </div>
+                    <div class="form-conts">
+                    <input type="text" id="title" class="krds-input" value="시스템 정기점검 안내">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-tit">
+                    <label for="detail">내용</label>
+                    </div>
+                    <div class="form-conts">
+                    <div class="textarea-wrap">
+                        <textarea class="krds-input" placeholder="내용을 입력해 주세요." id="detail">2025년 6월 30일 02:00~04:00 시스템 정기점검이 예정되어 있습니다. 해당 시간 동안 서비스 이용에 불편을 드릴 수 있으니 양해 부탁드립니다.</textarea>
+                    </div>
+                    </div>
+                </div>
+                <div class="form-group krds-file-upload">
+                    <div class="file-list">
+                        <div class="total"><span class="current">3개</span> / 10개</div>
+                        <ul class="upload-list">
+                            <li>
+                                <div class="file-info">
+                                <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
+                                <div class="btn-wrap">
+                                    <span class="krds-spinner" role="status">
+                                    <span class="sr-only">업로드 중</span>
+                                    </span>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="file-info">
+                                <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
+                                <div class="btn-wrap">
+                                    <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="upload-delete-btn">
+                        <button type="button" class="krds-btn xsmall tertiary">전체 파일 삭제<i class="svg-icon ico-angle right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //폼그룹 -->
+                </div>
+                <!-- //text input -->
+            </div>
+            <!-- //modal contents -->
+            <!-- modal btn -->
+            <div class="modal-btn btn-wrap">
+                <button type="button" class="krds-btn medium secondary close-modal open-modal" data-target="modal_admin_list_delet" style="margin-right: auto;">삭제</button>
+                <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+                <button type="button" class="krds-btn medium primary close-modal">저장</button>
+            </div>
+            <!-- //modal btn -->
+            <!-- close button -->
+            <button type="button" class="krds-btn medium icon btn-close close-modal">
+                <span class="sr-only">닫기</span>
+                <i class="svg-icon ico-popup-close"></i>
+            </button>
+            <!-- //close button -->
+            </div>
+        </div>
+        <div class="modal-back in"></div>
+    </section>
+    <section id="modal_admin_list_delet"  class="krds-modal fade" role="dialog" aria-labelledby="modal_admin_list_delet">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-conts">
+            <button type="button" class="krds-btn medium icon btn-close close-modal">
+              <span class="sr-only">닫기</span>
+              <i class="svg-icon ico-popup-close"></i>
+            </button>
+            <div class="text-type1">
+              <h2 class="tit_modal">정말 삭제하시겠습니까? </h2>
+              <p class="small-text">삭제하시면 다시 복구할 수 없습니다.</p>
+            </div>
+          <div class="modal-btn btn-wrap">
+            <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+            <button type="button" class="krds-btn medium primary close-modal">확인</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-back in"></div>
+    </section>
+  </div>
+</body>
+</html>

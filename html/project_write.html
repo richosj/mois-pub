@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>행정안전부 지능형 플랫폼</title>	
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../common/nice-select/css/nice-select.css">
+	<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../common/css/token.css">
+	<link rel="stylesheet" href="../common/css/project.css">
+	<script src="../common/js/jquery-3.6.3.js"></script>
+	<script scr="../common/js/jquery.nice-select.js"></script>
+	<script src="../common/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../common/js/common.js"></script>
+	<script src="../common/js/project.js"></script>
+	<script src="../common/js/krds.min.js"></script>
+
+</head>
+<body>
+	<div id="wrap" class="project">
+		<!-- 본문 바로가기 영역  -->
+		<div id="krds-skip-link" class="type1">
+			<a href="#breadcrumb">본문 바로가기</a>
+		</div>
+		<!-- //본문 바로가기 영역  -->
+		<!-- 헤더 영역 -->
+		<header id="krds-header" class="sample">
+			<!-- 헤더 컨텐츠 영역  -->
+			<div class="header-in">
+				<!-- 헤더 상단 기타메뉴 -->
+				<div class="header-container">
+					<div class="inner">
+						<div class="header-utility">
+							<ul class="utility-list">
+								<li>
+									<button type="button" class="krds-btn small text open-modal" data-target="modal_adjust_display">
+										<i class="svg-icon ico-bell-02"></i> 알림
+									</button>
+								</li>
+								<li>
+									<div class="krds-drop-wrap">
+										<button type="button" class="krds-btn small text">
+											<i class="svg-icon ico-setting"></i> 관리자 공간
+										</button>
+									</div>
+								</li>
+								<li>
+									<div class="krds-drop-wrap my-drop profile">
+										<button type="button" class="my drop-btn">홍</button>
+										<div class="drop-menu">
+											<div class="drop-in">
+												<div class="drop-top">
+													<p class="my-name">홍길동님</p>
+													<dl class="my-time">
+														<dt>로그아웃까지 남은 시간</dt>
+														<dd>
+															<span class="time">12:00</span>
+															<button type="button" class="krds-btn small text h-auto">시간 연장</button>
+														</dd>
+													</dl>
+												</div>
+												<ul class="drop-list">
+													<li><a href="#" class="item-link">나의 GOV 홈</a></li>
+													<li><a href="#" class="item-link">나의 신청내역</a></li>
+													<li><a href="#" class="item-link">나의 생활정보</a></li>
+													<li><a href="#" class="item-link">나의 정보관리</a></li>
+												</ul>
+												<div class="drop-bottom">
+													<button type="button" class="krds-btn small text"><i class="svg-icon ico-logout"></i> 로그아웃</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="header-branding">
+							<div class="logo-wrap">	
+								<h2 class="logo">
+									<a href="#" class="mois">
+										<span class="sr-only">행정안전부</span>
+									</a>
+									<p class="logo-text">지능형 업무관리 플랫폼</p>
+								</h2>
+							</div>	
+
+							<!-- 메인메뉴 : 데스크탑 -->
+							<nav class="krds-main-menu">
+								<ul class="gnb-menu">
+									<li>
+										<button type="button" class="gnb-main-trigger" data-trigger="gnb">홈</button>
+									</li>
+									<li>
+										<button type="button" class="gnb-main-trigger focus" data-trigger="gnb">업무공간</button>
+									</li>
+									<li>
+										<button type="button" class="gnb-main-trigger" data-trigger="gnb">AI 행정</button>
+									</li>
+								</ul>
+							</nav>
+
+							<!-- //메인메뉴 : 데스크탑 -->
+							<div class="header-actions">
+								<button type="button" class="btn-navi color-chat"><span class="sr-only">채팅</span></button>
+								<a href="#" class="btn-navi color-mail"><span class="sr-only">메세지</span></a>
+								<button type="button" class="btn-navi color-drive"><span class="sr-only">폴더</span></button>
+								<button type="button" class="btn-navi color-meeting"><span class="sr-only">비디오</span></button>
+								<button type="button" class="btn-navi color_docs"><span class="sr-only">Docs</span></button>
+								<button type="button" class="btn-navi color_ara"><span class="sr-only">ARA</span></button>
+                                <button type="button" class="btn-navi grid"><i class="svg-icon ico-grid-01"></i><span class="sr-only">메뉴</span></button>
+								<button type="button" class="btn-navi navi-row all" aria-controls="mobile-nav"><span>전체메뉴</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //헤더 상단 기타메뉴 -->
+			</div>
+			<!-- //헤더 컨텐츠 영역  -->
+			<!-- 메인메뉴 : 모바일 -->
+			<div id="mobile-nav" class="krds-main-menu-mobile">
+				<div class="gnb-wrap">
+					<!-- gnb-header -->
+					<div class="gnb-header">
+            <div class="gnb-utils">
+              <ul class="utility-list">
+                <li class="disable">
+                  <button type="button" class="krds-btn small text open-modal" data-target="modal_adjust_display">
+                    <i class="svg-icon ico-bell-02"></i> 알림
+                  </button>
+                </li>
+                <li>
+                  <div class="krds-drop-wrap">
+                    <button type="button" class="krds-btn small text">
+                      <i class="svg-icon ico-setting"></i> 관리자 공간
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="gnb-login">
+               <span class="user">홍길동님</span>
+              <button type="button" class="krds-btn large text"><i class="svg-icon ico-logout"></i> 로그아웃</button>
+            </div>
+						<div class="gnb-service-menu">
+							<button type="button" class="btn-navi color-chat"><span class="sr-only">채팅</span></button>
+							<a href="#" class="btn-navi color-mail"><span class="sr-only">메세지</span></a>
+							<button type="button" class="btn-navi color-drive"><span class="sr-only">폴더</span></button>
+							<button type="button" class="btn-navi color-meeting"><span class="sr-only">비디오</span></button>
+							<button type="button" class="btn-navi color_docs"><span class="sr-only">Docs</span></button>
+							<button type="button" class="btn-navi color_ara"><span class="sr-only">ARA</span></button>
+                            <button type="button" class="btn-navi grid"><i class="svg-icon ico-grid-01"></i><span class="sr-only">메뉴</span></button>
+						</div>
+						<!-- gnb-service-menu -->
+						<!-- 검색 -->
+						<div class="sch-input">
+							<input type="text" class="krds-input" placeholder="찾고자 하는 메뉴명을 입력해 주세요" title="찾고자 하는 메뉴명 입력" />
+							<button type="button" class="krds-btn small icon ico-search">
+								<span class="sr-only">검색</span>
+								<i class="svg-icon ico-sch"></i>
+							</button>
+						</div>
+						<!-- //검색 -->
+					</div>
+					<!-- //gnb-header -->
+					<!-- gnb-body -->
+					<!-- gnb-body -->
+					<div class="gnb-body">
+						<!-- gnb-menu -->
+						<div class="gnb-menu">
+							<div class="menu-wrap">
+								<ul role="tablist">
+									<li role="none">
+										<a href="#mGnb-anchor1" class="gnb-main-trigger" role="tab" aria-selected="false" aria-controls="mGnb-anchor1" id="tab-0">홈</a>
+									</li>
+									<li role="none">
+										<a href="#mGnb-anchor2" class="gnb-main-trigger" role="tab" aria-selected="false" aria-controls="mGnb-anchor2" id="tab-1">업무공간</a>
+									</li>
+									<li role="none">
+										<a href="#mGnb-anchor3" class="gnb-main-trigger" role="tab" aria-selected="false" aria-controls="mGnb-anchor3" id="tab-2">AI 행정</a>
+									</li>
+								</ul>
+							</div>
+							<div class="submenu-wrap">
+								<div class="gnb-sub-list" id="mGnb-anchor1" role="tabpanel" aria-labelledby="tab-0">
+									<h2 class="sub-title">홈</h2>
+								</div>
+								<div class="gnb-sub-list" id="mGnb-anchor2" role="tabpanel" aria-labelledby="tab-1">
+									<h2 class="sub-title">업무공간</h2>
+								</div>
+								<div class="gnb-sub-list" id="mGnb-anchor3" role="tabpanel" aria-labelledby="tab-2">
+									<h2 class="sub-title">AI 행정</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //gnb-body -->
+
+					<!-- gnb-close -->
+					<button type="button" class="krds-btn small icon" id="close-nav">
+						<span class="sr-only">전체메뉴 닫기</span>
+						<i class="svg-icon ico-popup-close"></i>
+					</button>
+					<!-- //gnb-close -->
+				</div>
+			</div>
+
+			<!-- //메인메뉴 : 모바일 -->
+			<!-- //메인메뉴 : 모바일 -->
+		</header>
+		<!-- //헤더 영역 -->
+		<div id="container" class="container">
+			<!-- 사이드 메뉴 -->
+      <nav class="krds-side-navigation">
+          <div class="admin_title">
+          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+              <div class="krds-contextual-help right bottom">
+                  <div class="tooltip-action">
+                  <button type="button" class="tooltip-btn"><p class="name">25년도 공공 AI 정책 포럼</p><i class="svg-icon ico-chevron-selector-vertical"></i></button>
+                  <div class="tooltip-popover" role="tooltip">
+                      <div class="profile-select">
+                          <button type="button" class="list-file active">
+                          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+                          <div class="textBox">
+                              <p class="name">25년도 공공 AI 정책 포럼</p>
+                              <p class="text">42명의 멤버</p>
+                          </div>
+                          </button>
+                          <button type="button" class="list-file">
+                          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+                          <div class="textBox">
+                              <p class="name">25년도 공공 AI 정책 포럼</p>
+                              <p class="text">42명의 멤버</p>
+                          </div>
+                          </button>
+                          <button type="button" class="list-file">
+                          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+                          <div class="textBox">
+                              <p class="name">25년도 공공 AI 정책 포럼</p>
+                              <p class="text">42명의 멤버</p>
+                          </div>
+                          </button>
+                          <button type="button" class="list-file">
+                          <figure class="profile_img"><img src="../images/admin_profile.jpg" alt="profile image"></figure>
+                          <div class="textBox">
+                              <p class="name">25년도 공공 AI 정책 포럼</p>
+                              <p class="text">42명의 멤버</p>
+                          </div>
+                          </button>
+                      </div>
+                      <div class="bot-box">
+                          <button type="button" class="list-file krds-btn text">
+                          <i class="svg-icon ico-dataflow-02"></i> 업무공간 트리
+                          </button>
+                          <button type="button" class="list-file krds-btn text">
+                          <i class="svg-icon ico-plus-square"></i> 업무공간추가
+                          </button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <div class="navigation-wrap">
+              <button type="button" class="krds-btn small text navBtn">
+              <i class="svg-icon ico-git-branch-01"></i><p class="sr-only">메뉴 열기</p>
+              </button>
+              <!-- 열려있는 페이지에 now 클래스 추가해주세요 (최종 li) -->
+              <ul class="navigation">
+              <li>
+                  <div class="lnb-tit"><p>Page Tree</p><button type="button" class="svg-icon plusBtn ico-plus"></button></div>
+                  <ul class="lnb-list">
+                      <li class="lnb-item" role="none">
+                      <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>[취합] 2025년 여름철 폭염 대책 점검 TF</p>
+                          <div class="right-btn-box">
+                          <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                          <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                      </button>
+                      </li>
+                      <li class="lnb-item" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>여름철 식중독 대책</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>Last depth</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                      <li class="lnb-item" role="none">
+                      <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>여름철 태풍 대책</p>
+                          <div class="right-btn-box">
+                          <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                          <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                      </button>
+                      </li>
+                      <li class="lnb-item active" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>여름철 폭염 대책</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem active" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>2025년 여름철 폭염 대책</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                                  <div class="lnb-submenu2-wrap active">
+                                  <ul>
+                                      <li class="lnb-subitem2 active now" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>폭염대책사례</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>폭염 현황</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  </div>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>2025년 여름철 폭염 대책</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                                  <div class="lnb-submenu2-wrap">
+                                  <ul>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>폭염대책사례</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>폭염 현황</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  </div>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>2023년 여름철 폭염 대책</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                      <li class="lnb-item" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>[취합] 임시업무 취합 페이지</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>임시업무 페이지 1</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                                  <div class="lnb-submenu2-wrap">
+                                  <ul>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>임시업무 페이지 1-1</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>임시업무 페이지 1-2</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  </div>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>임시업무 페이지 2</p>                                  
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                                  <div class="lnb-submenu2-wrap">
+                                  <ul>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>임시업무 페이지 2-1</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li class="lnb-subitem2" role="none">
+                                          <a href="#" class="lnb-btn" role="menuitem">
+                                              <p>임시업무 페이지 2-2</p>
+                                              <div class="right-btn-box">
+                                                  <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                                  <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                              </div>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                  </div>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>임시업무 페이지 3</p>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                      <li class="lnb-item" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>[취합] 샘플업무 취합 페이지</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>샘플업무 페이지 1</p>            
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>                    
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                  <p>샘플업무 페이지 2</p>
+                                  <div class="right-btn-box">
+                                      <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                      <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                  </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                      <li class="lnb-item" role="none">
+                          <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu-1" aria-expanded="true">
+                          <p>@old</p>
+                          <div class="right-btn-box">
+                              <a href="javascript:;" class="svg-icon ico-plus"><span class="sr-only">추가</span></a>
+                              <a href="javascript:;" class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></a>
+                          </div>
+                          </button>
+                          <div class="lnb-submenu">
+                          <ul id="lnbmenu-1" role="menu">
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>@old 페이지 1</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="lnb-subitem" role="none">
+                                  <a href="#" class="lnb-btn" role="menuitem">
+                                      <p>@old 페이지 2</p>
+                                      <div class="right-btn-box">
+                                          <div class="svg-icon ico-plus"><span class="sr-only">추가</span></div>
+                                          <div class="svg-icon ico-trash-03"><span class="sr-only">삭제</span></div>
+                                      </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+              </ul>	
+          </div>
+          <div class="bot-setting">
+          <div class="top">
+              <button type="button" class="krds-btn small text trashBtn">
+              <i class="svg-icon ico-info-hexagon"></i><p>업무공간 정보</p>
+              </button>
+              <button type="button" class="krds-btn small text trashBtn">
+              <i class="svg-icon ico-list"></i><p>AI색인 목록</p>
+              </button>
+              <button type="button" class="krds-btn small text trashBtn">
+              <i class="svg-icon ico-edit-05"></i><p>연계 기안</p>
+              </button>
+          </div>
+          <div class="left button-box">
+              <button type="button" class="krds-btn small text trashBtn">
+              <i class="svg-icon ico-trash-01_solid"></i><p>휴지통</p>
+              </button>
+              <button type="button" class="krds-btn small text settingBtn">
+              <i class="svg-icon ico-settings-02_solid"></i><p>공간도구</p>
+              </button>
+          </div>
+          <button type="button" class="krds-btn medium text foldBtn"><i class="svg-icon ico-chevron-left-double gray-light"></i></button>
+          </div>
+      </nav>
+      <!-- //사이드 메뉴 -->
+      <div class="contents project_write">
+          <div class="in-page-navigation">
+              <div class="top-setting">
+                  <button type="button" class="krds-btn medium text prevBtn"><i class="svg-icon ico-arrow-narrow-left gray-light"></i></button>
+                  <button type="button" class="krds-btn medium text foldBtn"><i class="svg-icon ico-chevron-left-double gray-light"></i></button>
+              </div>
+              <div class="title">
+                  <p class="page-cate">Index</p>
+                  <strong class="page-title">혁신안 준비</strong>
+              </div>
+              <div class="list">
+                  <p class="list-tit">[7월 1주차] 공공지능데이터국 주간 업무</p>
+                  <ul class="list-text">
+                      <li class="active"><a href="javascript:;">가. 주간업무 요약</a></li>
+                      <li><a href="javascript:;">나. 주요뉴스</a></li>
+                      <li>
+                          <a href="javascript:;">다. 핵심과제</a>
+                          <ul class="list-text2">
+                          <li><a href="javascript:;">다-1. 추진일정</a></li>
+                          <li><a href="javascript:;">다-2. 추진일정</a></li>
+                          <li><a href="javascript:;">다-3. 추진일정</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="javascript:;">라. 추진일정</a></li>
+                      <li><a href="javascript:;">마. 결론</a></li>
+                  <ul>
+              </div>
+          </div>
+          <div class="editor-toolbar-wrap">
+              <div class="editor-toolbar">
+                  <div class="left-box">
+                      <ul class="list">
+                      <div class="select-box">
+                          <select id="select_parnassus" class="krds-form-select" title="문단 선택">
+                            <option>문단</option>
+                          </select>
+                      </div>
+                      <div class="font-type flex">
+                          <button type="button" class="krds-btn medium bold-Btn">
+                              <i class="svg-icon ico-bold-01"></i> <p class="sr-only">굵게</p>
+                          </button>
+                          <button type="button" class="krds-btn medium under-Btn">
+                              <i class="svg-icon ico-underline-01"></i> <p class="sr-only">밑줄</p>
+                          </button>
+                          <button type="button" class="krds-btn medium italic-Btn">
+                              <i class="svg-icon ico-italic-01"></i> <p class="sr-only">기울이기</p>
+                          </button>
+                      </div>
+                      <div class="dot-type flex">
+                          <button type="button" class="krds-btn medium dot-point-Btn">
+                              <i class="svg-icon ico-dotpoints-01"></i> <p class="sr-only">기호 목록</p>
+                          </button>
+                          <button type="button" class="krds-btn medium dot-number-Btn">
+                              <i class="svg-icon ico-dotpoints-number"></i> <p class="sr-only">숫자 목록</p>
+                          </button>
+                      </div>
+                      <div class="align-type flex">
+                          <button type="button" class="krds-btn medium align-left-Btn">
+                              <i class="svg-icon ico-align-left"></i> <p class="sr-only">오른쪽 정렬</p>
+                          </button>
+                          <button type="button" class="krds-btn medium align-center-Btn">
+                              <i class="svg-icon ico-align-center"></i> <p class="sr-only">중앙 정렬</p>
+                          </button>
+                          <button type="button" class="krds-btn medium align-right-Btn">
+                              <i class="svg-icon ico-align-right"></i> <p class="sr-only">오른쪽 정렬</p>
+                          </button>
+                      </div>
+                      <div class="upload-type flex">
+                          <button type="button" class="krds-btn medium plus-img-Btn">
+                              <i class="svg-icon ico-image-03"></i> <p class="sr-only">이미지 추가</p>
+                          </button>
+                          <button type="button" class="krds-btn medium plus-file-Btn">
+                              <i class="svg-icon ico-attachment-01"></i> <p class="sr-only">파일 추가</p>
+                          </button>
+                          <button type="button" class="krds-btn medium plus-link-Btn">
+                              <i class="svg-icon ico-link-03"></i> <p class="sr-only">링크 추가</p>
+                          </button>
+                          <button type="button" class="krds-btn medium plus-table-Btn">
+                              <i class="svg-icon ico-table"></i> <p class="sr-only">테이블 추가</p>
+                          </button>
+                          <button type="button" class="krds-btn medium plus-check-Btn">
+                              <i class="svg-icon ico-check-square-broken"></i> <p class="sr-only">체크리스트 추가</p>
+                          </button>
+                      </div>
+                      <div class="corner-type flex">
+                          <button type="button" class="krds-btn medium corner-left-Btn">
+                              <i class="svg-icon ico-corner-up-left"></i> <p class="sr-only">왼쪽</p>
+                          </button>
+                          <button type="button" class="krds-btn medium corner-right-Btn">
+                              <i class="svg-icon ico-corner-up-right"></i> <p class="sr-only">오른쪽 추가</p>
+                          </button>
+                      </div>
+                      <div class="btn-box">
+                          <button type="button" class="krds-btn text small template-Btn open-modal" data-target="modal_add_template">
+                          템플릿 추가 <i class="svg-icon ico-file-02"></i>
+                          </button>
+                      </div>
+                      <div class="btn-box">
+                          <p>AI 색인</p>
+                          <div class="krds-form-check">
+                          <input type="checkbox" name="ai_chk" id="ai_chk">
+                          <label for="ai_chk"></label>
+                      </div>
+                      </div>
+                      </ul>
+                  </div>
+                  <div class="right-box">
+                      <div class="krds-contextual-help bottom right share-wrap">
+                        <div class="tooltip-action">
+                          <button type="button" class="krds-btn medium icon tooltip-btn share-btn">
+                            <span>공유</span>
+                          </button>
+                          <div class="tooltip-popover" role="tooltip">
+                            <div class="tooltip-contents">
+                              <div class="krds-tab-area layer">
+                                <!-- tab list -->
+                                <div class="tab line full">
+                                  <ul role="tablist">
+                                    <li id="tab_share_01" role="tab" aria-selected="true" aria-controls="panel_share_01" class="active">
+                                      <button type="button" class="btn-tab">내부공유 <i class="sr-only created"> 선택됨</i></button>
+                                    </li>
+                                    <li id="tab_share_02" role="tab" aria-selected="false" aria-controls="panel_share_02">
+                                      <button type="button" class="btn-tab">외부공유</button>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="tab-conts-wrap">
+                                  <section id="panel_share_01" aria-labelledby="tab_share_01" class="tab-conts active" data-quick-nav="false">
+                                    <div class="cont_title">
+                                      <p class="title">내부 공유</p>
+                                      <p class="text">해당 업무공간에 참여중인 누구에게도 쉽게 공유할 수 있습니다.</p>
+                                    </div>
+                                    <div class="form-flex">
+                                      <div class="form-group">
+                                        <div class="form-conts">
+                                          <input type="text" id="internal_url" class="krds-input" value="https://workspace.com" readonly>
+                                        </div>
+                                      </div>
+                                      <button type="button" class="krds-btn primary large open-modal tooltip-close-btn" data-target="modal_share_complete">링크공유</button>
+                                    </div>
+                                    <div class="border-box">
+                                      <div class="krds-table-wrap scroll">
+                                        <table class="tbl col data">
+                                          <caption> 조직도에 대한 표로 성명, 직급/직위, 부서명에 대한 내용으로 구성되어있다.</caption>
+                                          <colgroup>
+                                            <col style="width: 8%;">
+                                            <col>
+                                            <col style="width: 37.6%;">
+                                            <col style="width: 37.6%;">
+                                          </colgroup>
+                                          <thead>                
+                                            <tr>
+                                              <th scope="col"><div class="krds-form-check"><input type="checkbox" name="internal_share_chk_all" id="internal_share_chk_all"><label for="internal_share_chk_all"></label></div></th>
+                                              <th scope="col">성명</th>
+                                              <th scope="col">직급/직위</th>
+                                              <th scope="col">부서명</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <th scope="row"><div class="krds-form-check"><input type="checkbox" name="internal_share_chk_1" id="internal_share_chk_1"><label for="internal_share_chk_1"></label></div></th>
+                                              <td scope="row">김행정</td>
+                                              <td scope="row">주무관</td>
+                                              <td scope="row">공공지능데이터기정책과</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row"><div class="krds-form-check"><input type="checkbox" name="internal_share_chk_2" id="internal_share_chk_2"><label for="internal_share_chk_2"></label></div></th>
+                                              <td scope="row">김행정</td>
+                                              <td scope="row">주무관</td>
+                                              <td scope="row">공공지능데이터기정책과</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row"><div class="krds-form-check"><input type="checkbox" name="internal_share_chk_3" id="internal_share_chk_3"><label for="internal_share_chk_3"></label></div></th>
+                                              <td scope="row">김행정</td>
+                                              <td scope="row">주무관</td>
+                                              <td scope="row">공공지능데이터기정책과</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row"><div class="krds-form-check"><input type="checkbox" name="internal_share_chk_4" id="internal_share_chk_4"><label for="internal_share_chk_4"></label></div></th>
+                                              <td scope="row">김행정</td>
+                                              <td scope="row">주무관</td>
+                                              <td scope="row">공공지능데이터기정책과</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </section>
+                                  <section id="panel_share_02" aria-labelledby="tab_share_02" class="tab-conts" data-quick-nav="false">
+                                    <div class="step1 active">
+                                      <div class="cont_title">
+                                        <p class="title">외부공유</p>
+                                        <p class="text">웹에 게시한 페이지의 링크를 공유받은 사람은 읽기만 가능합니다.</p>
+                                      </div>
+                                      <button type="button" class="krds-btn primary medium">웹에 게시</button>
+                                    </div>
+                                    <div class="step2">
+                                      <div class="form-group">
+                                        <div class="form-tit">
+                                          <label for="external_url">웹에 게시된 링크</label>
+                                        </div>
+                                        <div class="form-conts">
+                                          <input type="text" id="external_url" class="krds-input" value="https://workspace.com" readonly>
+                                        </div>
+                                      </div>
+                                      <div class="button-box">
+                                        <button type="button" class="krds-btn medium tertiary gray cancelBtn">게시 취소</button>
+                                        <button type="button" class="krds-btn primary medium">사이트 방문</button>
+                                      </div>
+                                    </div>
+                                  </section>
+                                </div>
+                                <!-- //tab contents -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="krds-btn text xsmall save-btn">저장</button>
+                  </div>
+              </div>
+          </div>
+          <div class="editor-box-wrap">
+              <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+              <ol class="breadcrumb">
+                  <li class="home"><a href="#" class="txt">홈</a></li>
+                  <li><a href="#" class="txt">업무공간</a></li>
+                  <li><a href="#" class="txt">샘플 업무공간</a></li>
+                  <li><a href="#" class="txt">[취헙] 샘플업무 취합 페이지</a></li>
+              </ol>
+              </nav>
+              <form id="edit-form" class="editor-box">
+                  <div class="edit-top">
+                      <p class="edit-tit" id="titleEditable" contenteditable="true" data-placeholder="제목을 입력하세요" role="textbox" aria-label="제목" aria-multiline="false" tabindex="0" class="title-editable">[취합] 샘플업무 취합 페이지</p>
+                      <input type="hidden" name="title" id="titleInput" value="">
+                      <div class="file-box-wrap drag-wrap">
+                        <button type="button" class="krds-btn icon small dragBtn">
+                          <i class="svg-icon ico-Admin-10"></i><span class="sr-only">순서 변경</span>
+                        </button>
+                        <div class="file-box">
+                            <p class="file-name">전입재등록신고서 [hwp, 17KB]</p>
+                            <div class="right">
+                                <button type="button" class="krds-btn text down-btn">
+                                    다운로드 <i class="svg-icon ico-download-01"></i>
+                                </button>
+                                <div class="krds-contextual-help right bottom">
+                                    <div class="tooltip-action">
+                                        <button type="button" class="krds-btn small icon tooltip-btn">
+                                            <i class="svg-icon ico-dots-vertical"></i>
+                                        </button>
+                                        <div class="tooltip-popover" role="tooltip">
+                                            <button type="button" class="krds-btn text small">
+                                                <i class="svg-icon ico-ai"></i> AI 색인 활성화
+                                            </button>
+                                            <button type="button" class="krds-btn text small down-btn">
+                                                <i class="svg-icon ico-download-01"></i> 다운로드
+                                            </button>
+                                            <button type="button" class="krds-btn text small link-copy-btn">
+                                                <i class="svg-icon ico-link-02"></i> 링크 복사
+                                            </button>
+                                            <button type="button" class="krds-btn text small file-name-btn">
+                                                <i class="svg-icon ico-edit-03"></i> 파일 이름 수정
+                                            </button>
+                                            <button type="button" class="krds-btn text small file-delet-btn">
+                                                <i class="svg-icon ico-trash-03"></i> 파일 삭제
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="file-box-wrap drag-wrap">
+                        <button type="button" class="krds-btn icon small dragBtn">
+                          <i class="svg-icon ico-Admin-10"></i><span class="sr-only">순서 변경</span>
+                        </button>
+                        <div class="file-box">
+                            <p class="file-name">파일 업로드 또는 삽입</p>
+                            <div class="right">
+                                <button type="button" class="krds-btn text file-upload-btn open-modal" data-target="modal_file_upload">
+                                    업로드 <i class="svg-icon ico-upload-01"></i>
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="editor" class="edit-contents" contenteditable="true" spellcheck="true" data-placeholder="본문을 입력하세요. 사진은 드래그하거나 Image 버튼으로 추가하세요.">
+                    <p style="font-size: var(--font-size-heading-small); font-weight: 700; margin-bottom: var(--gap-5);">■ 방향성</p>
+                    <p style="font-size: var(--font-size-body-small); margin-bottom: var(--gap-7);">해당 업무가 지향하는 방향성의 요약을 적습니다.</p>
+                    <p style="font-size: var(--font-size-heading-small); font-weight: 700; margin-bottom: var(--gap-5);">■ 대책</p>
+                    <div class="krds-table-wrap scroll">
+                        <table class="tbl col data">
+                        <caption>테이블</caption>
+                        <colgroup>
+                            <col style="width: 23.8%;">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">내용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">구분 1</th>
+                            <td>
+                                <ul class="krds-info-list num">
+                                <li>
+                                    1. 내용
+                                    <ul class="krds-info-list decimal">
+                                    <li>상세 내용</li>
+                                    </ul>
+                                </li>
+                                </ul>
+                                <ul class="krds-info-list num">
+                                <li>
+                                    1. 내용
+                                    <ul class="krds-info-list decimal">
+                                    <li>상세 내용</li>
+                                </li>
+                                <li>
+                                    2. 내용
+                                    <ul class="krds-info-list decimal">
+                                    <li>상세 내용</li>
+                                </li>
+                                </ul>
+                            </td>
+                            </tr>
+                            <tr>
+                            <th scope="row">구분 2</th>
+                            <td>
+                                <ul class="krds-info-list num">
+                                <li>
+                                    1. 내용
+                                    <ul class="krds-info-list decimal">
+                                    <li>상세 내용</li>
+                                    </ul>
+                                </li>
+                                </ul>
+                                <ul class="krds-info-list num">
+                                <li>
+                                    1. 내용
+                                    <ul class="krds-info-list decimal">
+                                    <li>상세 내용</li>
+                                </li>
+                                <li>
+                                    2. 내용
+                                    <ul class="krds-info-list decimal">
+                                    <li>상세 내용</li>
+                                </li>
+                                </ul>
+                            </td>
+                            </tr>
+                            <tr>
+                            <th scope="row">구분 3</th>
+                            <td>
+                                <ul class="krds-info-list num">
+                                <li>
+                                    1. 내용
+                                    <ul class="krds-info-list decimal">
+                                    <li>상세 내용</li>
+                                    </ul>
+                                </li>
+                                </ul>
+                                <ul class="krds-info-list num">
+                                <li>
+                                    1. 내용
+                                    <ul class="krds-info-list decimal">
+                                    <li>상세 내용</li>
+                                </li>
+                                <li>
+                                    2. 내용
+                                    <ul class="krds-info-list decimal">
+                                    <li>상세 내용</li>
+                                </li>
+                                </ul>
+                            </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <div class="file-box-wrap drag-wrap">
+                      <button type="button" class="krds-btn icon small dragBtn">
+                        <i class="svg-icon ico-Admin-10"></i><span class="sr-only">순서 변경</span>
+                      </button>
+                      <div class="file-box">
+                          <p class="file-name">이미지추가</p>
+                          <div class="right">
+                              <button type="button" class="krds-btn text file-upload-btn open-modal" data-target="modal_file_upload">
+                                  업로드 <i class="svg-icon ico-upload-01"></i>
+                              </button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="img-wrap drag-wrap">
+                      <button type="button" class="krds-btn icon small dragBtn">
+                        <i class="svg-icon ico-Admin-10"></i><span class="sr-only">순서 변경</span>
+                      </button>
+                      <fiure class="img"><img src="../images/project_write_img.jpg" alt="image"></fiure>                    
+                      <div class="krds-contextual-help right bottom">
+                        <div class="tooltip-action">
+                            <button type="button" class="krds-btn small icon tooltip-btn">
+                                <i class="svg-icon ico-dots-vertical"></i>
+                            </button>
+                            <div class="tooltip-popover" role="tooltip">
+                                <button type="button" class="krds-btn text small ing-copy-btn">
+                                    <i class="svg-icon ico-copy-06"></i> 복제
+                                </button>
+                                <button type="button" class="krds-btn text small img-delet-btn">
+                                    <i class="svg-icon ico-trash-03"></i> 삭제
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table-wrap drag-wrap">
+                      <button type="button" class="krds-btn icon small dragBtn">
+                        <i class="svg-icon ico-Admin-10"></i><span class="sr-only">순서 변경</span>
+                      </button>
+                      <div class="table-box">
+                        <table>
+                          <caption>테이블 생성</caption>
+                          <tbody>
+                            <tr>
+                              <td>
+                              </td>
+                              <td>
+                                <div class="krds-contextual-help right bottom">
+                                  <div class="tooltip-action">
+                                      <button type="button" class="krds-btn medium tooltip-btn">
+                                          <i class="svg-icon ico-dots-vertical"></i>
+                                      </button>
+                                      <div class="tooltip-popover" role="tooltip">
+                                          <ul class="list">
+                                            <li>
+                                              <button type="button" class="krds-btn text small table-up-plus-btn">
+                                                위에 삽입
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-down-plus-btn">
+                                                아래에 삽입
+                                              </button>
+                                            </li>
+                                            <li>
+                                              <button type="button" class="krds-btn text small table-color-btn">
+                                                색상
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-align-btn">
+                                                정렬
+                                              </button>
+                                            </li>
+                                            <li>
+                                              <button type="button" class="krds-btn text small table-width-btn">
+                                                페이지 너비로 설정
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-equal-btn">
+                                                열 너비 균등 분배
+                                              </button>
+                                            </li>
+                                            <li>
+                                              <button type="button" class="krds-btn text small table-copy-btn">
+                                                복제
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-empty-btn">
+                                                내용 지우기
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-delet-btn">
+                                                삭제
+                                              </button>
+                                            </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="krds-contextual-help left bottom">
+                                  <div class="tooltip-action">
+                                      <button type="button" class="krds-btn medium tooltip-btn">
+                                          <i class="svg-icon ico-dots-vertical"></i>
+                                      </button>
+                                      <div class="tooltip-popover" role="tooltip">
+                                          <ul class="list">
+                                            <li>
+                                              <button type="button" class="krds-btn text small table-up-plus-btn">
+                                                위에 삽입
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-down-plus-btn">
+                                                아래에 삽입
+                                              </button>
+                                            </li>
+                                            <li>
+                                              <button type="button" class="krds-btn text small table-color-btn">
+                                                색상
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-align-btn">
+                                                정렬
+                                              </button>
+                                            </li>
+                                            <li>
+                                              <button type="button" class="krds-btn text small table-width-btn">
+                                                페이지 너비로 설정
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-equal-btn">
+                                                열 너비 균등 분배
+                                              </button>
+                                            </li>
+                                            <li>
+                                              <button type="button" class="krds-btn text small table-copy-btn">
+                                                복제
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-empty-btn">
+                                                내용 지우기
+                                              </button>
+                                              <button type="button" class="krds-btn text small table-delet-btn">
+                                                삭제
+                                              </button>
+                                            </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <button type="button" class="krds-btn text small table-plus-row-btn table-plus-btn">
+                        <i class="svg-icon ico-plus"></i> <span class="sr-only">행 추가</span>
+                      </button>
+                      <button type="button" class="krds-btn text small table-plus-column-btn table-plus-btn">
+                        <i class="svg-icon ico-plus"></i> <span class="sr-only">열 추가</span>
+                      </button>
+                      <button type="button" class="krds-btn text small table-plus-all-btn table-plus-btn">
+                        <i class="svg-icon ico-plus"></i> <span class="sr-only">전체 셀 추가</span>
+                      </button>
+                    </div>
+                    <div class="list-wrap">
+                      <ul class="list circle">
+                        <li>목록</li>
+                      </ul>
+                    </div>
+                    <div class="list-wrap">
+                      <ul class="list num">
+                        <li><span class="num">1.</span> 목록</li>
+                      </ul>
+                    </div>
+                    <div class="check-wrap">
+                      <div class="checkBox"contenteditable="false"><input type="checkbox" name="chk_1" id="chk_1"></div>
+                      <p>체크박스</p>
+                    </div>
+                    <div class="check-wrap">
+                      <div class="checkBox"contenteditable="false"><input type="checkbox" name="chk_2" id="chk_2" checked></div>
+                      <p>체크박스</p>
+                    </div>
+                    <div class="link-wrap">
+                      <a href="javascript:;"><span>시스템 정기점검 안내</span><i class="svg-icon ico-share-03"></i></a>
+                      <div class="link-select-box">
+                        <div class="search-top-box">
+                          <div class="sch-form-wrap">
+                            <div class="sch-input">
+                              <div class="form-conts">
+                                <input type="text" id="keyword_search" class="krds-input" placeholder="내용을 입력하세요." title="내용 입력">
+                                <button type="button" class="krds-btn small icon ico-search btn-exec">
+                                    <span class="sr-only">검색</span>
+                                    <i class="svg-icon ico-sch"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="list">
+                          <li>
+                            <button type="button" class="krds-btn small text">
+                              <i class="svg-icon ico-file-05"></i> <span>여름철 태풍 대책</span>
+                            </button>
+                            <button type="button" class="krds-btn small text">
+                              <i class="svg-icon ico-file-05"></i> <span>여름철 태풍 대책</span>
+                            </button>
+                            <button type="button" class="krds-btn small text">
+                              <i class="svg-icon ico-file-05"></i> <span>여름철 태풍 대책</span>
+                            </button>
+                            <button type="button" class="krds-btn small text">
+                              <i class="svg-icon ico-file-05"></i> <span>여름철 태풍 대책</span>
+                            </button>
+                          </li>
+                          <li>
+                            <p class="li-title">최근페이지</p>
+                            <button type="button" class="krds-btn small text">
+                              <i class="svg-icon ico-file-05"></i> <span>여름철 태풍 대책</span>
+                            </button>
+                            <button type="button" class="krds-btn small text">
+                              <i class="svg-icon ico-file-05"></i> <span>여름철 태풍 대책</span>
+                            </button>
+                            <button type="button" class="krds-btn small text">
+                              <i class="svg-icon ico-file-05"></i> <span>여름철 태풍 대책</span>
+                            </button>
+                            <button type="button" class="krds-btn small text">
+                              <i class="svg-icon ico-file-05"></i> <span>여름철 태풍 대책</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>                  
+              </form>
+          </div>
+      </div>
+      <nav class="krds-side-navigation right">
+          <div class="list-wrap">
+              <ul class="list">
+              <li>
+                  <button type="button" class="krds-btn medium">
+                      <i class="svg-icon gray ico-ai"></i>
+                  </button>
+              </li>
+              <li>
+                  <button type="button" class="krds-btn medium">
+                      <i class="svg-icon gray ico-message-text-square-02"></i>
+                  </button>
+              </li>
+              <li>
+                  <button type="button" class="krds-btn medium">
+                      <i class="svg-icon gray ico-file-attachment-01"></i>
+                  </button>
+              </li>
+              </ul>
+              <div class="bot-setting">
+                  <button type="button" class="krds-btn medium text foldBtn"><i class="svg-icon ico-chevron-right-double"></i></button>
+              </div>
+          </div>
+          <div class="cont-wrap">
+              <div class="cont cont01"></div>
+              <div class="cont cont02">
+                <div class="cont-header">
+                  <p>코멘트</p>
+                  <button type="button" class="krds-btn medium text closeBtn"><i class="svg-icon ico-close"></i></button>
+                </div>
+                <div class="cont-body">
+                  <div class="top-box">
+                    <div class="profile-box">
+                      <div class="profile"><p>김</p></div>
+                      <p class="name">김행정</p>
+                      <p class="date">2025.11.20 14:22</p>
+                    </div>
+                    <ul class="card-wrap">
+                      <li class="card">
+                        <div class="text-wrap">
+                          <div class="text"><p><span class="name">@박취합</span>방향성에 기재된 내용을 구체적으로 수정부탁드립니다.</p></div>
+                          <button type="button" class="krds-btn commentBtn medium text">답글달기</button>
+                        </div>
+                      </li>
+                      <li class="card">
+                        <div class="text-wrap">
+                          <div class="text"><p><span class="name">@박취합</span>긴급복지지원 내용 다시 확인해 주세요.</p></div>
+                        </div>
+                        <div class="comment-wrap">
+                          <div class="profile-box">
+                            <div class="profile"><p>김</p></div>
+                            <p class="name">김행정</p>
+                            <p class="date">2025.11.20 14:22</p>
+                          </div>
+                          <div class="text"><p>수정했습니다. 맞는지 한번 봐주세요.</p></div>
+                          <button type="button" class="krds-btn commentBtn medium text">답글달기</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="input-box">
+                    <div class="form-conts">
+                      <div class="textarea-wrap">
+                        <textarea class="krds-input" placeholder="@를 입력하여 누군가를 멘션할 수 있습니다." id="comment-box"></textarea>
+                      </div>
+                    </div>
+                    <button type="button" class="krds-btn sentBtn medium text">
+                      <i class="svg-icon ico-arrow-up_solid"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="cont cont03">
+                <div class="cont-header">
+                  <p>첨부파일</p>
+                  <button type="button" class="krds-btn medium text closeBtn"><i class="svg-icon ico-close"></i></button>
+                </div>
+                <div class="cont-body">
+                  <div class="top-box">                    
+                    <ul class="card-wrap">
+                      <li class="card">
+                        <div class="profile-box">
+                          <button type="button" class="krds-btn small icon">
+                            <span class="sr-only">검색</span>
+                            <i class="svg-icon ico-file-hwp"></i>
+                          </button>
+                          <p class="name">지방 저가주택 </p>
+                          <p class="date">2025.11.20 14:22</p>
+                        </div>
+                        <div class="bot-box">
+                          <button type="button" class="krds-btn small text downBtn">
+                            <i class="svg-icon ico-download-01"></i> 다운로드
+                          </button>
+                          <button type="button" class="krds-btn small text deletBtn">
+                            삭제
+                          </button>
+                        </div>
+                      </li>
+                      <li class="card">
+                        <div class="profile-box">
+                          <button type="button" class="krds-btn small icon">
+                            <span class="sr-only">검색</span>
+                            <i class="svg-icon ico-file-hwp"></i>
+                          </button>
+                          <p class="name">지방 저가주택 </p>
+                          <p class="date">2025.11.20 14:22</p>
+                        </div>
+                        <div class="bot-box">
+                          <button type="button" class="krds-btn small text downBtn">
+                            <i class="svg-icon ico-download-01"></i> 다운로드
+                          </button>
+                          <button type="button" class="krds-btn small text deletBtn">
+                            삭제
+                          </button>
+                        </div>
+                      </li>
+                      <li class="card">
+                        <div class="profile-box">
+                          <button type="button" class="krds-btn small icon">
+                            <span class="sr-only">검색</span>
+                            <i class="svg-icon ico-file-hwp"></i>
+                          </button>
+                          <p class="name">지방 저가주택 </p>
+                          <p class="date">2025.11.20 14:22</p>
+                        </div>
+                        <div class="bot-box">
+                          <button type="button" class="krds-btn small text downBtn">
+                            <i class="svg-icon ico-download-01"></i> 다운로드
+                          </button>
+                          <button type="button" class="krds-btn small text deletBtn">
+                            삭제
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="input-box krds-file-upload">
+                    <div class="file-upload">
+                      <p class="txt">파일을 드래그하여 붙여 넣으세요.</p>
+                      <div class="file-upload-btn-wrap">
+                          <input type="file" name="myFile" id="fileu-upload" hidden>
+                          <label for="fileu-upload">
+                              <button type="button" class="krds-btn xsmall secondary"><i class="svg-icon ico-upload-cloud-01"></i>Browse file</button>
+                          </label>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </nav>
+		</div>
+	</div>
+    <div class="modal-wrap">
+        <section id="modal_file_upload"  class="krds-modal fade" role="dialog" aria-labelledby="modal_file_upload">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-conts">
+                        <div class="krds-tab-area layer">
+                            <div class="tab line full">
+                                <ul role="tablist">
+                                <li id="tab_login_01" role="tab" aria-selected="true" aria-controls="panel_login_01" class="active">
+                                    <button type="button" class="btn-tab">업로드 <i class="sr-only created"> 선택됨</i></button>
+                                </li>
+                                <li id="tab_login_02" role="tab" aria-selected="false" aria-controls="panel_login_02">
+                                    <button type="button" class="btn-tab">링크 삽입</button>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="tab-conts-wrap">
+                                <section id="panel_login_01" aria-labelledby="tab_login_01" class="tab-conts active" data-quick-nav="false">
+                                <form action="">
+                                        <div class="krds-file-upload">
+                                            <div class="file-upload">
+                                                <p class="txt">파일을 끌어다 놓거나, 창을 클릭하여 파일탐색기로 첨부</p>
+                                                <div class="file-upload-btn-wrap">
+                                                    <input type="file" name="myFile" id="fileu-upload" hidden>
+                                                    <label for="fileu-upload">
+                                                        <button type="button" class="krds-btn medium"><i class="svg-icon ico-image-up"></i>파일선택</button>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-btn btn-wrap">
+                                            <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+                                            <button type="button" class="krds-btn medium primary close-modal">업로드</button>
+                                        </div>
+                                </form>
+                                </section>
+                                <section id="panel_login_02" aria-labelledby="tab_login_02" class="tab-conts" data-quick-nav="false">
+                                    <form action="">
+                                        <div class="form-conts">
+                                            <input type="text" id="modal_project_01_name" class="krds-input" placeholder="파일 링크 붙여넣기">
+                                        </div>
+                                        <div class="modal-btn btn-wrap">
+                                            <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+                                            <button type="button" class="krds-btn medium primary close-modal">링크삽입</button>
+                                        </div>
+                                    </from>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-back in"></div>
+        </section>
+        <section id="modal_share_complete"  class="krds-modal fade" role="dialog" aria-labelledby="modal_share_complete">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-conts">
+                <button type="button" class="krds-btn medium icon btn-close close-modal">
+                  <span class="sr-only">닫기</span>
+                  <i class="svg-icon ico-popup-close"></i>
+                </button>
+                <div class="text-type1">
+                  <h2 class="tit_modal">선택한 사용자에게 <br>링크가 공유되었습니다.</h2>
+                  <p class="small-text">링크는 메일, 메신저로 발송됩니다.</p>
+                </div>
+                <div class="button-box">
+                  <button type="button" class="krds-btn medium tertiary close-modal">&nbsp;취소&nbsp;</button>
+                  <button type="button" class="krds-btn medium primary close-modal">&nbsp;확인&nbsp;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-back in"></div>
+        </section>
+        <section id="modal_add_template"  class="krds-modal fade" role="dialog" aria-labelledby="modal_add_template">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- modal title -->
+                    <div class="modal-header">
+                        <h2 id="tit_modal_add_template" class="modal-title">
+                        템플릿 추가
+                        </h2>
+                    </div>
+                    <!-- //modal title -->
+                    <!-- modal contents -->
+                    <div class="modal-conts">
+                        <div class="krds-tab-area layer">
+                            <div class="tab line full">
+                                <ul role="tablist">
+                                  <li id="tab_template_01" role="tab" aria-selected="true" aria-controls="panel_template_01" class="active">
+                                      <button type="button" class="btn-tab">전체 <i class="sr-only created"> 선택됨</i></button>
+                                  </li>
+                                  <li id="tab_template_02" role="tab" aria-selected="false" aria-controls="panel_template_02">
+                                      <button type="button" class="btn-tab">취합형</button>
+                                  </li>
+                                  <li id="tab_template_03" role="tab" aria-selected="false" aria-controls="panel_template_03">
+                                      <button type="button" class="btn-tab">보관형</button>
+                                  </li>
+                                </ul>
+                            </div>
+                            <div class="tab-conts-wrap">
+                                <section id="panel_template_01" aria-labelledby="tab_template_01" class="tab-conts active" data-quick-nav="false">
+                                  <ul class="list">
+                                    <li class="active">
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </section>
+                                <section id="panel_template_02" aria-labelledby="tab_template_02" class="tab-conts" data-quick-nav="false">
+                                  <ul class="list">
+                                    <li class="active">
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿2</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </section>
+                                <section id="panel_template_03" aria-labelledby="tab_template_03" class="tab-conts" data-quick-nav="false">
+                                  <ul class="list">
+                                    <li class="active">
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿3</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <figure class="img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                                      <div class="text-box">
+                                        <p class="title">국회대응 템플릿</p>
+                                        <p class="text">템플릿 설명 텍스트</p>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <figure class="right-img"><img src="../images/modal_add_template_img.jpg" alt="image"></figure>
+                    </div>                    
+                    <!-- //modal contents -->
+                    <!-- modal btn -->
+                    <div class="modal-btn btn-wrap">
+                      <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+                      <button type="button" class="krds-btn medium primary close-modal">완료</button>
+                  </div>
+                  <!-- //modal btn -->
+                  <!-- close button -->
+                  <button type="button" class="krds-btn medium icon btn-close close-modal">
+                      <span class="sr-only">닫기</span>
+                      <i class="svg-icon ico-popup-close"></i>
+                  </button>
+                  <!-- //close button -->
+                </div>
+            </div>
+            <div class="modal-back in"></div>
+        </section>
+    </div>
+</body>
+</html>

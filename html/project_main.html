@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>행정안전부 지능형 플랫폼</title>
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="../common/nice-select/css/nice-select.css">
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.css" type="text/css"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="../common/css/token.css">
+  <link rel="stylesheet" href="../common/css/project.css">
+  <link rel="stylesheet" href="../common/css/responsive.css">
+  <script src="../common/js/jquery-3.6.3.js"></script>
+  <script scr="../common/js/jquery.nice-select.js"></script>
+  <script src="../common/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="../common/js/common.js"></script>
+  <script src="../common/js/project.js"></script>
+  <script src="../common/js/krds.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="project">
+    <!-- 본문 바로가기 영역  -->
+    <div id="krds-skip-link" class="type1">
+      <a href="#breadcrumb">본문 바로가기</a>
+    </div>
+    <!-- //본문 바로가기 영역  -->
+    <!-- 헤더 영역 -->
+    <header id="krds-header" class="sample">
+      <!-- 헤더 컨텐츠 영역  -->
+      <div class="header-in">
+        <!-- 헤더 상단 기타메뉴 -->
+        <div class="header-container">
+          <div class="inner">
+            <div class="header-utility">
+              <ul class="utility-list">
+                <li>
+                  <button type="button" class="krds-btn small text open-modal" data-target="modal_adjust_display">
+                    <i class="svg-icon ico-bell-02"></i> 알림
+                  </button>
+                </li>
+                <li>
+                  <div class="krds-drop-wrap">
+                    <button type="button" class="krds-btn small text">
+                      <i class="svg-icon ico-setting"></i> 관리자 공간
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <div class="krds-drop-wrap my-drop profile">
+                    <button type="button" class="my drop-btn">홍</button>
+                    <div class="drop-menu">
+                      <div class="drop-in">
+                        <div class="drop-top">
+                          <p class="my-name">홍길동님</p>
+                        </div>
+                        <ul class="drop-list">
+                          <li><a href="#" class="item-link">마이페이지</a></li>
+                        </ul>
+                        <div class="drop-bottom">
+                          <button type="button" class="krds-btn small text"><i class="svg-icon ico-logout"></i>
+                            로그아웃</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="header-branding">
+              <div class="logo-wrap">
+                <h2 class="logo">
+                  <a href="#" class="mois">
+                    <span class="sr-only">행정안전부</span>
+                  </a>
+                  <p class="logo-text">지능형 업무관리 플랫폼</p>
+                </h2>
+              </div>
+
+              <!-- 메인메뉴 : 데스크탑 -->
+              <nav class="krds-main-menu">
+                <ul class="gnb-menu">
+                  <li>
+                    <button type="button" class="gnb-main-trigger" data-trigger="gnb">홈</button>
+                  </li>
+                  <li>
+                    <button type="button" class="gnb-main-trigger focus" data-trigger="gnb">업무공간</button>
+                  </li>
+                  <li>
+                    <button type="button" class="gnb-main-trigger" data-trigger="gnb">AI 행정</button>
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- //메인메뉴 : 데스크탑 -->
+              <div class="header-actions">
+                <button type="button" class="btn-navi color-chat"><span class="sr-only">채팅</span></button>
+                <a href="#" class="btn-navi color-mail"><span class="sr-only">메세지</span></a>
+                <button type="button" class="btn-navi color-drive"><span class="sr-only">폴더</span></button>
+                <button type="button" class="btn-navi color-meeting"><span class="sr-only">비디오</span></button>
+                <button type="button" class="btn-navi color_docs"><span class="sr-only">Docs</span></button>
+                <button type="button" class="btn-navi color_ara"><span class="sr-only">ARA</span></button>
+                <button type="button" class="btn-navi grid"><i class="svg-icon ico-grid-01"></i><span
+                    class="sr-only">메뉴</span></button>
+                <button type="button" class="btn-navi navi-row all"
+                  aria-controls="mobile-nav"><span>전체메뉴</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //헤더 상단 기타메뉴 -->
+      </div>
+      <!-- //헤더 컨텐츠 영역  -->
+      <!-- 메인메뉴 : 모바일 -->
+      <div id="mobile-nav" class="krds-main-menu-mobile">
+        <div class="gnb-wrap">
+          <!-- gnb-header -->
+          <div class="gnb-header">
+            <div class="gnb-utils">
+              <ul class="utility-list">
+                <li class="disable">
+                  <button type="button" class="krds-btn small text open-modal" data-target="modal_adjust_display">
+                    <i class="svg-icon ico-bell-02"></i> 알림
+                  </button>
+                </li>
+                <li>
+                  <div class="krds-drop-wrap">
+                    <button type="button" class="krds-btn small text">
+                      <i class="svg-icon ico-setting"></i> 관리자 공간
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="gnb-login">
+              <span class="user">홍길동님</span>
+              <button type="button" class="krds-btn large text"><i class="svg-icon ico-logout"></i> 로그아웃</button>
+            </div>
+            <div class="gnb-service-menu">
+              <button type="button" class="btn-navi color-chat"><span class="sr-only">채팅</span></button>
+              <a href="#" class="btn-navi color-mail"><span class="sr-only">메세지</span></a>
+              <button type="button" class="btn-navi color-drive"><span class="sr-only">폴더</span></button>
+              <button type="button" class="btn-navi color-meeting"><span class="sr-only">비디오</span></button>
+              <button type="button" class="btn-navi color_docs"><span class="sr-only">Docs</span></button>
+              <button type="button" class="btn-navi color_ara"><span class="sr-only">ARA</span></button>
+              <button type="button" class="btn-navi grid"><i class="svg-icon ico-grid-01"></i><span
+                  class="sr-only">메뉴</span></button>
+            </div>
+            <!-- gnb-service-menu -->
+            <!-- 검색 -->
+            <div class="sch-input">
+              <input type="text" class="krds-input" placeholder="찾고자 하는 메뉴명을 입력해 주세요" title="찾고자 하는 메뉴명 입력" />
+              <button type="button" class="krds-btn small icon ico-search">
+                <span class="sr-only">검색</span>
+                <i class="svg-icon ico-sch"></i>
+              </button>
+            </div>
+            <!-- //검색 -->
+          </div>
+          <!-- //gnb-header -->
+          <!-- gnb-body -->
+          <!-- gnb-body -->
+          <div class="gnb-body">
+            <!-- gnb-menu -->
+            <div class="gnb-menu">
+              <div class="menu-wrap">
+                <ul role="tablist">
+                  <li role="none">
+                    <a href="#mGnb-anchor1" class="gnb-main-trigger" role="tab" aria-selected="false"
+                      aria-controls="mGnb-anchor1" id="tab-0">홈</a>
+                  </li>
+                  <li role="none">
+                    <a href="#mGnb-anchor2" class="gnb-main-trigger" role="tab" aria-selected="false"
+                      aria-controls="mGnb-anchor2" id="tab-1">업무공간</a>
+                  </li>
+                  <li role="none">
+                    <a href="#mGnb-anchor3" class="gnb-main-trigger" role="tab" aria-selected="false"
+                      aria-controls="mGnb-anchor3" id="tab-2">AI 행정</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="submenu-wrap">
+                <div class="gnb-sub-list" id="mGnb-anchor1" role="tabpanel" aria-labelledby="tab-0">
+                  <h2 class="sub-title">홈</h2>
+                </div>
+                <div class="gnb-sub-list" id="mGnb-anchor2" role="tabpanel" aria-labelledby="tab-1">
+                  <h2 class="sub-title">업무공간</h2>
+                </div>
+                <div class="gnb-sub-list" id="mGnb-anchor3" role="tabpanel" aria-labelledby="tab-2">
+                  <h2 class="sub-title">AI 행정</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //gnb-body -->
+
+          <!-- gnb-close -->
+          <button type="button" class="krds-btn small icon" id="close-nav">
+            <span class="sr-only">전체메뉴 닫기</span>
+            <i class="svg-icon ico-popup-close"></i>
+          </button>
+          <!-- //gnb-close -->
+        </div>
+      </div>
+
+      <!-- //메인메뉴 : 모바일 -->
+      <!-- //메인메뉴 : 모바일 -->
+    </header>
+    <!-- //헤더 영역 -->
+    <div class="main-background">
+      <video autoplay loop muted poster="../images/main/main-background.png">
+        <source src="../images/main/main-background.mp4" type="video/mp4">
+        <img src="../images/main/main-background.png" alt="배경 이미지">
+      </video>
+    </div>
+    <div id="container" class="container">
+      <div class="contents">
+        <!-- main -->
+        <div class="main">
+          <div class="main-search">
+            <div class="main-search-title">
+              <p>김행정님,</p>
+              <b>생성형 AI와 업무를 시작하세요.</b>
+            </div>
+
+            <div class="main-search-form">
+              <div class="form-group">
+                <input type="text" placeholder="어떤 업무를 도와드릴까요?    [대외비 자료와 개인정보는 안전하게 관리해 주세요]" title="검색어 입력">
+                <button type="button" class="btn-submit">
+                  <i class="svg-icon" aria-hidden="true"></i>
+                  <span class="sr-only">검색</span>
+                </button>
+              </div>
+              <div class="quick-buttons">
+                <button class="quick-button">
+                  <i aria-hidden="true" class="quick-button-icon"></i>
+                  <span>지능형 업무관리 플랫폼에 대해 알려줘</span>
+                </button>
+                <button class="quick-button">
+                  <i aria-hidden="true" class="quick-button-icon"></i>
+                  <span>AI 서비스에 대해 알려줘</span>
+                </button>
+                <button class="quick-button">
+                  <i aria-hidden="true" class="quick-button-icon"></i>
+                  <span>업무 공간에 대해 알려줘</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- //main-search -->
+
+          <div class="main-contents">
+            <div class="document-section">
+              <div class="section-header">
+                <h2 class="section-title">생성형 대화를 통한 문서 작성</h2>
+              </div>
+              <p class="section-description">
+                AI와의 대화를 통해 아이디어를 손쉽게 문서에 반영하고, 원하는 서식에 맞춰 작성부터 편집까지 빠르고 편리하게 작업할 수 있습니다.
+              </p>
+
+              <div class="document-examples">
+                <a href="#" class="document-example">
+                  <div class="document-title"><i class="quick-button-icon" aria-hidden="true"></i> 국회·의회 대응 Q&A 작성</div>
+                  <div class="document-prompt">[지방 저가주택 공급] 페이지로 국회 대응 문서를 작성해줘</div>
+                </a>
+
+                <a href="#" class="document-example">
+                  <div class="document-title"><i class="quick-button-icon" aria-hidden="true"></i> 브리핑 문서 요약</div>
+                  <div class="document-prompt">[25년 구축 1단계] 과제에서 보도자료 관련된 파일을 찾아줘</div>
+                </a>
+
+                <a href="#" class="document-example">
+                  <div class="document-title"><i class="quick-button-icon" aria-hidden="true"></i> 기고문 작성</div>
+                  <div class="document-prompt">[재난 안전 2단계] 과제로 기고문 작성해줘</div>
+                </a>
+              </div>
+            </div>
+
+            <div class="document-example-carousel">
+              <div class="swiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide"><div class="img"><img src="../images/main/slide-01.png" alt=""></div></li>
+                  <li class="swiper-slide"><div class="img"><img src="../images/main/slide-02.png" alt=""></div></li>
+                </ul>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <!-- //main -->
+      </div>
+    </div>
+  </div>
+  <div class="modal-wrap">
+    <section id="modal_project_01_settings" class="krds-modal fade modal_project_01_settings" role="dialog"
+      aria-labelledby="modal_project_01_settings">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="tit_modal_project_01_settings" class="modal-title">
+              공간 설정
+            </h2>
+          </div>
+          <div class="modal-conts">
+            <div class="fieldset">
+              <div class="form-group">
+                <div class="form-tit">
+                  <label for="title">제목</label>
+                </div>
+                <div class="form-conts is-error">
+                  <input type="text" id="title" class="krds-input" value="지능형 업무관리 플랫폼 구축">
+                </div>
+                <p class="form-hint-invalid">100자 이상 초과하였습니다.</p>
+              </div>
+            </div>
+            <div class="more-box">
+              <div class="more-btn-wrap">
+                <button type="button" class="krds-btn medium text more-btn">
+                  상세내역 <i class="svg-icon ico-chevron-down"></i>
+                </button>
+              </div>
+              <div class="fieldset bot-field">
+                <div class="form-group">
+                  <div class="form-tit">
+                    <label for="detail">설명</label>
+                  </div>
+                  <div class="form-conts is-error">
+                    <input type="text" id="detail" class="krds-input" value="지능형 업무관리 과제 플랫폼입니다. ">
+                  </div>
+                  <p class="form-hint-invalid">500자 이상 초과하였습니다.</p>
+                </div>
+                <div class="form-flex">
+                  <div class="form-group width2">
+                    <div class="form-tit">
+                      <label for="permission_period">일정</label>
+                    </div>
+                    <div class="form-flex">
+                      <div class="form-conts calendar-conts">
+                        <div class="calendar-input">
+                          <input type="number" class="krds-input datepicker cal" placeholder="YYYY.MM.DD-YYYY.MM.DD"
+                            id="permission_period">
+                          <button type="button" class="krds-btn medium icon form-btn-datepicker">
+                            <span class="sr-only">달력 열기</span>
+                            <i class="svg-icon ico-calendar"></i>
+                          </button>
+                        </div>
+                        <div class="krds-calendar-area">
+                          <div class="calendar-wrap top" aria-label="달력">
+                            <div class="calendar-head">
+                              <button type="button" class="btn-cal-move prev"><span class="sr-only">이전 달</span></button>
+                              <div class="calendar-switch-wrap">
+                                <div class="calendar-drop-down">
+                                  <button type="button" class="btn-cal-switch year" aria-label="연도 선택">2024년</button>
+                                  <div class="calendar-select calendar-year-wrap">
+                                    <ul class="sel year">
+                                      <li>
+                                        <button type="button" class="active">2025년</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">2026년</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">2027년</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">2028년</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">2029년</button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="calendar-drop-down">
+                                  <button type="button" class="btn-cal-switch month" aria-label="월 선택">12월</button>
+                                  <div class="calendar-select calendar-mon-wrap">
+                                    <ul class="sel month">
+                                      <li>
+                                        <button type="button">01월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">02월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">03월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">04월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">05월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">06월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">07월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button" class="active">08월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">09월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">10월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">11월</button>
+                                      </li>
+                                      <li>
+                                        <button type="button">12월</button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <button type="button" class="btn-cal-move next"><span class="sr-only">다음 달</span></button>
+                            </div>
+                            <div class="calendar-body">
+                              <div class="calendar-table-wrap">
+                                <table class="calendar-tbl">
+                                  <caption>
+                                    2025년 08월
+                                  </caption>
+                                  <thead>
+                                    <tr>
+                                      <th>일</th>
+                                      <th>월</th>
+                                      <th>화</th>
+                                      <th>수</th>
+                                      <th>목</th>
+                                      <th>금</th>
+                                      <th>토</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="old day-off"><button type="button"
+                                          class="btn-set-date"><span>26</span></button></td>
+                                      <td class="old"><button type="button"
+                                          class="btn-set-date"><span>27</span></button></td>
+                                      <td class="old"><button type="button"
+                                          class="btn-set-date"><span>28</span></button></td>
+                                      <td class="old"><button type="button"
+                                          class="btn-set-date"><span>29</span></button></td>
+                                      <td class="old"><button type="button"
+                                          class="btn-set-date"><span>30</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>1</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>2</span></button></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="day-off"><button type="button"
+                                          class="btn-set-date"><span>3</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>4</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>5</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>6</span></button></td>
+                                      <td class="period start end"><button type="button"
+                                          class="btn-set-date"><span>7</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>8</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>9</span></button></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="day-off"><button type="button"
+                                          class="btn-set-date"><span>10</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>11</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>12</span></button></td>
+                                      <td><button type="button" class="btn-set-date" disabled><span>13</span></button>
+                                      </td>
+                                      <td><button type="button" class="btn-set-date"><span>14</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>15</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>16</span></button></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="day-off"><button type="button"
+                                          class="btn-set-date"><span>17</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>18</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>19</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>20</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>21</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>22</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>23</span></button></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="day-off"><button type="button"
+                                          class="btn-set-date"><span>24</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>25</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>26</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>27</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>28</span></button></td>
+                                      <td><button type="button" class="btn-set-date"><span>29</span></button></td>
+                                      <td class="today"><button type="button"
+                                          class="btn-set-date"><span>30</span></button></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="day-off"><button type="button"
+                                          class="btn-set-date"><span>31</span></button></td>
+                                      <td class="new"><button type="button" class="btn-set-date"><span>1</span></button>
+                                      </td>
+                                      <td class="new"><button type="button" class="btn-set-date"><span>2</span></button>
+                                      </td>
+                                      <td class="new"><button type="button" class="btn-set-date"><span>3</span></button>
+                                      </td>
+                                      <td class="new"><button type="button" class="btn-set-date"><span>4</span></button>
+                                      </td>
+                                      <td class="new"><button type="button" class="btn-set-date"><span>5</span></button>
+                                      </td>
+                                      <td class="new"><button type="button" class="btn-set-date"><span>6</span></button>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="calendar-footer">
+                              <div class="calendar-btn-wrap">
+                                <button type="button" class="krds-btn small text" id="get-today">오늘</button>
+                                <button type="button" class="krds-btn small tertiary">취소</button>
+                                <button type="button" class="krds-btn small primary">확인</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group width2">
+                    <div class="form-tit">
+                      <label for="status">진행상태</label>
+                    </div>
+                    <div class="form-conts">
+                      <select class="krds-form-select" title="진행상태 선택" id="status">
+                        <option value="시작" selected>시작</option>
+                        <option value="진행중">진행중</option>
+                        <option value="종료">종료</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-tit">
+                    <p>권한</p>
+                    <button type="button" class="krds-btn xsmall secondary open-modal close-modal"
+                      data-target="modal_project_01_organization">사용자 선택</button>
+                  </div>
+                  <ul class="form-conts flex column border">
+                    <li class="flex wrap">
+                      <p>담당자</p>
+                      <div class="krds-badge-wrap">
+                        <span class="krds-badge large bg-primary">김행정</span>
+                        <span class="krds-badge large bg-light-secondary">이행정</span>
+                      </div>
+                    </li>
+                    <li class="flex wrap">
+                      <p>참여자</p>
+                      <div class="krds-badge-wrap">
+                        <span class="krds-badge large outline-secondary">최업무</span>
+                        <span class="krds-badge large outline-secondary">박업무</span>
+                      </div>
+                    </li>
+                    <li class="flex wrap">
+                      <p>참조자</p>
+                      <div class="krds-badge-wrap">
+                        <span class="krds-badge large outline-secondary">공공지능데이터국</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-group scope">
+                  <div class="form-tit">
+                    <p>공개범위</p>
+                    <div class="krds-form-toggle-switch noChange">
+                      <input type="checkbox" id="scope_private">
+                      <label for="scope_private"><span class="switch-toggle"><i></i></span><span
+                          class="text">비공개</span></label>
+                    </div>
+                  </div>
+                  <div class="form-conts-wrap">
+                    <div class="form-conts">
+                      <div class="krds-input">
+                        <p class="text"></p>
+                      </div>
+                      <div class="svg-icon ico-chevron-down"></div>
+                    </div>
+                    <ul class="select-list">
+                      <li>
+                        <div class="krds-form-check">
+                          <input type="radio" name="scope_chk" id="scope_chk_1">
+                          <label for="scope_chk_1">다른 법률 또는 법률이 위임한 명령에 따라 비밀 또는 비공개로 규정된 정보</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="krds-form-check">
+                          <input type="radio" name="scope_chk" id="scope_chk_2">
+                          <label for="scope_chk_2">국가안보·국방·통일·외교관계 등 국익을 해할 우려가 있는 정보</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="krds-form-check">
+                          <input type="radio" name="scope_chk" id="scope_chk_3">
+                          <label for="scope_chk_3">공개시 국민의 생명·신체·재산보호에 지장을 초래할 우려가 있는 정보</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="krds-form-check">
+                          <input type="radio" name="scope_chk" id="scope_chk_4">
+                          <label for="scope_chk_4">진행 중인 재판 등에 관한 사항으로 공개시 직무수행에 곤란을 초래하는 정보</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="krds-form-check">
+                          <input type="radio" name="scope_chk" id="scope_chk_5">
+                          <label for="scope_chk_5">감사·검사·시험·입찰계약·기술개발·인사관리·의사결정과정 등 공개될 경우 업무의 공정한 수행에 지장을 초래하는
+                            정보</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="krds-form-check">
+                          <input type="radio" name="scope_chk" id="scope_chk_6">
+                          <label for="scope_chk_6">이름·주민등록번호 등 특정인 식별가능한 개인에 관한 정보</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="krds-form-check">
+                          <input type="radio" name="scope_chk" id="scope_chk_7">
+                          <label for="scope_chk_7">법인·단체·개인의 경영·영업상 비밀에 관한 사항</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="krds-form-check">
+                          <input type="radio" name="scope_chk" id="scope_chk_8">
+                          <label for="scope_chk_8">공개시 부동산투기·매점매석 등으로 특정인에게 이익 또는 불이익을 줄 우려가 있는 정보</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group tag">
+                  <div class="form-tit">
+                    <p>BRM태그</p>
+                    <button type="button" class="krds-btn xsmall secondary tag-plusBtn close-modal open-modal"
+                      data-target="modal_project_01_brm">BRM 선택</button>
+                  </div>
+                  <ul class="form-conts flex column border">
+                    <li class="flex">
+                      <p>기능별</p>
+                      <div class="krds-badge-wrap">
+                        <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                        <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                      </div>
+                    </li>
+                    <li class="flex">
+                      <p>참여자</p>
+                      <div class="krds-badge-wrap">
+                        <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                        <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                      </div>
+                    </li>
+                    <li class="flex">
+                      <p>참조자</p>
+                      <div class="krds-badge-wrap">
+                        <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                        <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-btn btn-wrap">
+            <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+            <button type="button" class="krds-btn medium primary close-modal">완료</button>
+          </div>
+          <button type="button" class="krds-btn medium icon btn-close close-modal">
+            <span class="sr-only">닫기</span>
+            <i class="svg-icon ico-popup-close"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-back in"></div>
+    </section>
+    <section id="modal_project_01_settings_view" class="krds-modal fade modal_project_01_settings" role="dialog"
+      aria-labelledby="modal_project_01_settings_view">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="tit_modal_project_01_settings_view" class="modal-title">
+              공간 정보
+            </h2>
+          </div>
+          <div class="modal-conts">
+            <div class="fieldset">
+              <div class="form-group">
+                <div class="form-tit">
+                  <label for="title">제목</label>
+                </div>
+                <div class="form-conts">
+                  <input type="text" id="title" class="krds-input" value="지능형 업무관리 플랫폼 구축" readonly>
+                </div>
+              </div>
+            </div>
+            <div class="fieldset bot-field">
+              <div class="form-group">
+                <div class="form-tit">
+                  <label for="detail">설명</label>
+                </div>
+                <div class="form-conts">
+                  <input type="text" id="detail" class="krds-input" value="지능형 업무관리 과제 플랫폼입니다. " readonly>
+                </div>
+              </div>
+              <div class="form-flex">
+                <div class="form-group width2">
+                  <div class="form-tit">
+                    <label for="permission_period">일정</label>
+                  </div>
+                  <div class="form-flex">
+                    <div class="form-conts calendar-conts">
+                      <div class="calendar-input">
+                        <input type="number" class="krds-input datepicker cal" placeholder="YYYY.MM.DD-YYYY.MM.DD"
+                          id="permission_period" readonly>
+                        <button type="button" class="krds-btn medium icon form-btn-datepicker">
+                          <span class="sr-only">달력 열기</span>
+                          <i class="svg-icon ico-calendar"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group width2">
+                  <div class="form-tit">
+                    <label for="status">진행상태</label>
+                  </div>
+                  <div class="form-conts">
+                    <select class="krds-form-select" title="진행상태 선택" id="status" readonly>
+                      <option value="시작" selected>시작</option>
+                      <option value="진행중">진행중</option>
+                      <option value="종료">종료</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-tit">
+                  <p>권한</p>
+                </div>
+                <ul class="form-conts flex column border">
+                  <li class="flex wrap">
+                    <p>담당자</p>
+                    <div class="krds-badge-wrap">
+                      <span class="krds-badge large bg-primary">김행정</span>
+                      <span class="krds-badge large bg-light-secondary">이행정</span>
+                    </div>
+                  </li>
+                  <li class="flex wrap">
+                    <p>참여자</p>
+                    <div class="krds-badge-wrap">
+                      <span class="krds-badge large outline-secondary">최업무</span>
+                      <span class="krds-badge large outline-secondary">박업무</span>
+                    </div>
+                  </li>
+                  <li class="flex wrap">
+                    <p>참조자</p>
+                    <div class="krds-badge-wrap">
+                      <span class="krds-badge large outline-secondary">공공지능데이터국</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group scope">
+                <div class="form-tit">
+                  <p>공개범위</p>
+                </div>
+                <div class="form-conts-wrap disabled">
+                  <div class="form-conts">
+                    <div class="krds-input">
+                      <p class="text">공개 > 전체공개</p>
+                    </div>
+                    <div class="svg-icon ico-chevron-down"></div>
+                  </div>
+                  <ul class="select-list">
+                    <li>
+                      <div class="krds-form-check">
+                        <input type="radio" name="scope_chk" id="scope_chk_1">
+                        <label for="scope_chk_1">다른 법률 또는 법률이 위임한 명령에 따라 비밀 또는 비공개로 규정된 정보</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="krds-form-check">
+                        <input type="radio" name="scope_chk" id="scope_chk_2">
+                        <label for="scope_chk_2">국가안보·국방·통일·외교관계 등 국익을 해할 우려가 있는 정보</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="krds-form-check">
+                        <input type="radio" name="scope_chk" id="scope_chk_3">
+                        <label for="scope_chk_3">공개시 국민의 생명·신체·재산보호에 지장을 초래할 우려가 있는 정보</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="krds-form-check">
+                        <input type="radio" name="scope_chk" id="scope_chk_4">
+                        <label for="scope_chk_4">진행 중인 재판 등에 관한 사항으로 공개시 직무수행에 곤란을 초래하는 정보</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="krds-form-check">
+                        <input type="radio" name="scope_chk" id="scope_chk_5">
+                        <label for="scope_chk_5">감사·검사·시험·입찰계약·기술개발·인사관리·의사결정과정 등 공개될 경우 업무의 공정한 수행에 지장을 초래하는 정보</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="krds-form-check">
+                        <input type="radio" name="scope_chk" id="scope_chk_6">
+                        <label for="scope_chk_6">이름·주민등록번호 등 특정인 식별가능한 개인에 관한 정보</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="krds-form-check">
+                        <input type="radio" name="scope_chk" id="scope_chk_7">
+                        <label for="scope_chk_7">법인·단체·개인의 경영·영업상 비밀에 관한 사항</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="krds-form-check">
+                        <input type="radio" name="scope_chk" id="scope_chk_8">
+                        <label for="scope_chk_8">공개시 부동산투기·매점매석 등으로 특정인에게 이익 또는 불이익을 줄 우려가 있는 정보</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form-group tag">
+                <div class="form-tit">
+                  <p>BRM태그</p>
+                </div>
+                <ul class="form-conts flex column border">
+                  <li class="flex">
+                    <p>기능별</p>
+                    <div class="krds-badge-wrap">
+                      <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                      <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                    </div>
+                  </li>
+                  <li class="flex">
+                    <p>참여자</p>
+                    <div class="krds-badge-wrap">
+                      <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                      <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                    </div>
+                  </li>
+                  <li class="flex">
+                    <p>참조자</p>
+                    <div class="krds-badge-wrap">
+                      <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                      <span class="krds-badge large outline-secondary">신속하고 정확하며 가치있는 가상서비스의 실현</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-btn btn-wrap">
+            <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+            <button type="button" class="krds-btn medium primary close-modal open-modal"
+              data-target="modal_project_01_invite_user">확인</button>
+          </div>
+          <button type="button" class="krds-btn medium icon btn-close close-modal">
+            <span class="sr-only">닫기</span>
+            <i class="svg-icon ico-popup-close"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-back in"></div>
+    </section>
+    <section id="modal_project_01_organization" class="krds-modal fade organization_modal" role="dialog"
+      aria-labelledby="modal_project_01_organization">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="tit_modal_project_01_organization" class="modal-title">
+              조직도
+            </h2>
+          </div>
+          <div class="modal-conts">
+            <div class="left-wrap">
+              <form class="search-top-box">
+                <div class="sch-form-wrap">
+                  <div class="sch-input">
+                    <div class="form-conts">
+                      <input type="text" id="keyword_organization_search" class="krds-input"
+                        placeholder="이름 또는 부서를 입력해주세요." title="이름 또는 부서를 입력해주세요.">
+                      <button type="button" class="krds-btn medium icon ico-search btn-exec">
+                        <span class="sr-only">검색</span>
+                        <i class="svg-icon ico-sch"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="left-box">
+                <div class="krds-tab-area layer">
+                  <div class="tab line full">
+                    <ul role="tablist">
+                      <li id="tab_org_01" role="tab" aria-selected="true" aria-controls="panel_org_01" class="active">
+                        <button type="button" class="btn-tab">행정안전부 <i class="sr-only created"> 선택됨</i></button>
+                      </li>
+                      <li id="tab_org_02" role="tab" aria-selected="false" aria-controls="panel_org_02">
+                        <button type="button" class="btn-tab">전체기관</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-conts-wrap">
+                    <section id="panel_org_01" aria-labelledby="tab_org_01" class="tab-conts active"
+                      data-quick-nav="false">
+                      <ul class="menu-list list list1">
+                        <li class="active">
+                          <button type="button" class="list-name">
+                            <p>장관</p>
+                          </button>
+                          <ul class="list list2">
+                            <li class="active">
+                              <button type="button" class="list-name">
+                                <p>대변인</p>
+                              </button>
+                              <ul class="list list3">
+                                <li><button type="button" class="list-name">
+                                    <p>장관</p>
+                                  </button></li>
+                                <li><button type="button" class="list-name">
+                                    <p>안전소통담당관</p>
+                                  </button></li>
+                                <li><button type="button" class="list-name">
+                                    <p>디지털소통팀</p>
+                                  </button></li>
+                                <li><button type="button" class="list-name">
+                                    <p>장관정책보좌관</p>
+                                  </button></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="active">
+                          <button type="button" class="list-name">
+                            <p>차관</p>
+                          </button>
+                          <ul class="list list2">
+                            <li><button type="button" class="list-name">
+                                <p>차관보</p>
+                              </button></li>
+                            <li><button type="button" class="list-name">
+                                <p>의정관</p>
+                              </button></li>
+                            <li><button type="button" class="list-name">
+                                <p>감사관</p>
+                              </button></li>
+                            <li><button type="button" class="list-name">
+                                <p>인사기획관</p>
+                              </button></li>
+                            <li class="active">
+                              <button type="button" class="list-name">
+                                <p>기획조정실</p>
+                              </button>
+                              <ul class="list list3">
+                                <li class="active">
+                                  <button type="button" class="list-name">
+                                    <p>정책기획관</p>
+                                  </button>
+                                  <ul class="list list4 last-list">
+                                    <li class="active now"><button type="button" class="list-name">
+                                        <p>기획재정담당관</p>
+                                      </button></li>
+                                    <li><button type="button" class="list-name">
+                                        <p>미래전략담당관</p>
+                                      </button></li>
+                                    <li><button type="button" class="list-name">
+                                        <p>법무담당관</p>
+                                      </button></li>
+                                    <li><button type="button" class="list-name">
+                                        <p>데이터정보화담당관</p>
+                                      </button></li>
+                                  </ul>
+                                </li>
+                                <li><button type="button" class="list-name">
+                                    <p>예시2</p>
+                                  </button></li>
+                                <li><button type="button" class="list-name">
+                                    <p>예시3</p>
+                                  </button></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </section>
+                    <section id="panel_org_02" aria-labelledby="tab_org_02" class="tab-conts" data-quick-nav="false">
+                      <ul class="menu-list list list1">
+                        <li>
+                          <button type="button" class="list-name">
+                            <p>장관1</p>
+                          </button>
+                          <ul class="list list2">
+                            <li>
+                              <button type="button" class="list-name">
+                                <p>대변인</p>
+                              </button>
+                              <ul class="list list3">
+                                <li><button type="button" class="list-name">
+                                    <p>장관</p>
+                                  </button></li>
+                                <li><button type="button" class="list-name">
+                                    <p>안전소통담당관</p>
+                                  </button></li>
+                                <li><button type="button" class="list-name">
+                                    <p>디지털소통팀</p>
+                                  </button></li>
+                                <li><button type="button" class="list-name">
+                                    <p>장관정책보좌관</p>
+                                  </button></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <button type="button" class="list-name">
+                            <p>차관2</p>
+                          </button>
+                          <ul class="list list2">
+                            <li><button type="button" class="list-name">
+                                <p>차관보</p>
+                              </button></li>
+                            <li><button type="button" class="list-name">
+                                <p>의정관</p>
+                              </button></li>
+                            <li><button type="button" class="list-name">
+                                <p>감사관</p>
+                              </button></li>
+                            <li><button type="button" class="list-name">
+                                <p>인사기획관</p>
+                              </button></li>
+                            <li>
+                              <button type="button" class="list-name">
+                                <p>기획조정실</p>
+                              </button>
+                              <ul class="list list3">
+                                <li>
+                                  <button type="button" class="list-name">
+                                    <p>정책기획관</p>
+                                  </button>
+                                  <ul class="list list4 last-list">
+                                    <li><button type="button" class="list-name">
+                                        <p>기획재정담당관</p>
+                                      </button></li>
+                                    <li><button type="button" class="list-name">
+                                        <p>미래전략담당관</p>
+                                      </button></li>
+                                    <li><button type="button" class="list-name">
+                                        <p>법무담당관</p>
+                                      </button></li>
+                                    <li><button type="button" class="list-name">
+                                        <p>데이터정보화담당관</p>
+                                      </button></li>
+                                  </ul>
+                                </li>
+                                <li><button type="button" class="list-name">
+                                    <p>예시2</p>
+                                  </button></li>
+                                <li><button type="button" class="list-name">
+                                    <p>예시3</p>
+                                  </button></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                  <!-- //tab contents -->
+                </div>
+              </div>
+              <div class="select-box">
+                <div class="border-box">
+                  <p class="box-title">차관 > 기획조정실 > 정책기획관 > 기획재정담당관</p>
+                  <div class="krds-table-wrap scroll">
+                    <table class="tbl col data">
+                      <caption> 조직도에 대한 표로 성명, 직급/직위, 부서명에 대한 내용으로 구성되어있다.</caption>
+                      <colgroup>
+                        <col style="width: 8%;">
+                        <col>
+                        <col style="width: 37.6%;">
+                        <col style="width: 37.6%;">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <div class="krds-form-check"><input type="checkbox" name="chk_all" id="chk_all"><label
+                                for="chk_all"></label></div>
+                          </th>
+                          <th scope="col">성명</th>
+                          <th scope="col">직급/직위</th>
+                          <th scope="col">부서명</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- 구조 변경되면 common.js 에서 html 구조 변경 요망 -->
+                        <tr>
+                          <th scope="row">
+                            <div class="krds-form-check"><input type="checkbox" name="chk_1" id="chk_1"><label
+                                for="chk_1"></label></div>
+                          </th>
+                          <td scope="row">이행정</td>
+                          <td scope="row">담당관(직무대리)</td>
+                          <td scope="row">기획재정담당관</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="krds-form-check"><input type="checkbox" name="chk_2" id="chk_2"><label
+                                for="chk_2"></label></div>
+                          </th>
+                          <td scope="row">박사무</td>
+                          <td scope="row">사무관</td>
+                          <td scope="row">기획재정담당관</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="krds-form-check"><input type="checkbox" name="chk_3" id="chk_3"><label
+                                for="chk_3"></label></div>
+                          </th>
+                          <td scope="row">최주무</td>
+                          <td scope="row">주무관</td>
+                          <td scope="row">기획재정담당관</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="krds-form-check"><input type="checkbox" name="chk_4" id="chk_4"><label
+                                for="chk_4"></label></div>
+                          </th>
+                          <td scope="row">한실무</td>
+                          <td scope="row">담당관(직무대리)</td>
+                          <td scope="row">행정실무원</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-box">
+              <div class="result-box">
+                <div class="box-wrap box01">
+                  <button type="button" class="krds-btn icon secondary changeBtn">
+                    <i class="svg-icon ico-switch-horizontal-01"></i> <span class="sr-only">변경</span>
+                  </button>
+                  <div class="border-box">
+                    <p class="box-title">담당자</p>
+                    <ul class="result-list">
+                      <!-- 구조 변경되면 common.js 에서 html 구조 변경 요망 -->
+                      <li>
+                        <div class="name-box">
+                          <p>이행정</p>
+                          <p>담당관(직무대리)</p>
+                          <p>기획재정담당관</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                      <li>
+                        <div class="name-box">
+                          <p>이행정</p>
+                          <p>담당관(직무대리)</p>
+                          <p>기획재정담당관</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+                <div class="box-wrap box02">
+                  <button type="button" class="krds-btn icon secondary changeBtn">
+                    <i class="svg-icon ico-switch-horizontal-01"></i> <span class="sr-only">변경</span>
+                  </button>
+                  <div class="border-box">
+                    <p class="box-title">참여자</p>
+                    <ul class="result-list">
+                      <li>
+                        <div class="name-box">
+                          <p>이행정</p>
+                          <p>담당관(직무대리)</p>
+                          <p>기획재정담당관</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                      <li>
+                        <div class="name-box">
+                          <p>이행정</p>
+                          <p>담당관(직무대리)</p>
+                          <p>기획재정담당관</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+                <div class="box-wrap box03">
+                  <button type="button" class="krds-btn icon secondary changeBtn">
+                    <i class="svg-icon ico-switch-horizontal-01"></i> <span class="sr-only">변경</span>
+                  </button>
+                  <div class="border-box">
+                    <p class="box-title">참조자</p>
+                    <ul class="result-list">
+                      <li>
+                        <div class="name-box">
+                          <p>이행정</p>
+                          <p>담당관(직무대리)</p>
+                          <p>기획재정담당관</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                      <li>
+                        <div class="name-box">
+                          <p>이행정</p>
+                          <p>담당관(직무대리)</p>
+                          <p>기획재정담당관</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-btn btn-wrap">
+            <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+            <button type="button" class="krds-btn medium primary close-modal">저장</button>
+          </div>
+          <button type="button" class="krds-btn medium icon btn-close close-modal">
+            <span class="sr-only">닫기</span>
+            <i class="svg-icon ico-popup-close"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-back in"></div>
+    </section>
+    <section id="modal_project_01_brm" class="krds-modal fade organization_modal" role="dialog"
+      aria-labelledby="modal_project_01_brm">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="tit_modal_project_01_brm" class="modal-title">
+              BRM 추가
+            </h2>
+          </div>
+          <div class="modal-conts">
+            <div class="left-box">
+              <div class="krds-tab-area layer">
+                <div class="tab line full">
+                  <ul role="tablist">
+                    <li id="tab_brm_01" role="tab" aria-selected="true" aria-controls="panel_brm_01" class="active">
+                      <button type="button" class="btn-tab">기능별 <i class="sr-only created"> 선택됨</i></button>
+                    </li>
+                    <li id="tab_brm_02" role="tab" aria-selected="false" aria-controls="panel_brm_02">
+                      <button type="button" class="btn-tab">목적별</button>
+                    </li>
+                    <li id="tab_brm_03" role="tab" aria-selected="false" aria-controls="panel_brm_03">
+                      <button type="button" class="btn-tab">조직별</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-conts-wrap">
+                  <section id="panel_brm_01" aria-labelledby="tab_brm_01" class="tab-conts active"
+                    data-quick-nav="false">
+                    <ul class="menu-list infinite">
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_1">
+                            <label for="brm_list_chk_1">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_2">
+                            <label for="brm_list_chk_2">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_3">
+                            <label for="brm_list_chk_3">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_4">
+                            <label for="brm_list_chk_4">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="active">
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5">
+                            <label for="brm_list_chk_5">1depth</label>
+                          </div>
+                        </div>
+                        <ul class="list">
+                          <li>
+                            <div class="list-name">
+                              <button type="button" class="krds-btn icon medium">
+                                <div class="svg-icon ico-chevron-down"></div>
+                              </button>
+                              <div class="krds-form-check">
+                                <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_1">
+                                <label for="brm_list_chk_5_1">2depth</label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="active">
+                            <div class="list-name">
+                              <button type="button" class="krds-btn icon medium">
+                                <div class="svg-icon ico-chevron-down"></div>
+                              </button>
+                              <div class="krds-form-check">
+                                <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2">
+                                <label for="brm_list_chk_5_2">2depth</label>
+                              </div>
+                            </div>
+                            <ul class="list">
+                              <li>
+                                <div class="list-name">
+                                  <button type="button" class="krds-btn icon medium">
+                                    <div class="svg-icon ico-chevron-down"></div>
+                                  </button>
+                                  <div class="krds-form-check">
+                                    <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_1">
+                                    <label for="brm_list_chk_5_2_1">3depth</label>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="active">
+                                <div class="list-name">
+                                  <button type="button" class="krds-btn icon medium">
+                                    <div class="svg-icon ico-chevron-down"></div>
+                                  </button>
+                                  <div class="krds-form-check">
+                                    <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2">
+                                    <label for="brm_list_chk_5_2_2">3depth</label>
+                                  </div>
+                                </div>
+                                <ul class="list">
+                                  <li>
+                                    <div class="list-name">
+                                      <button type="button" class="krds-btn icon medium">
+                                        <div class="svg-icon ico-chevron-down"></div>
+                                      </button>
+                                      <div class="krds-form-check">
+                                        <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_1">
+                                        <label for="brm_list_chk_5_2_2_1">4depth</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="active">
+                                    <div class="list-name">
+                                      <button type="button" class="krds-btn icon medium">
+                                        <div class="svg-icon ico-chevron-down"></div>
+                                      </button>
+                                      <div class="krds-form-check">
+                                        <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_2">
+                                        <label for="brm_list_chk_5_2_2_2">4depth</label>
+                                      </div>
+                                    </div>
+                                    <ul class="list">
+                                      <li>
+                                        <div class="list-name">
+                                          <button type="button" class="krds-btn icon medium">
+                                            <div class="svg-icon ico-chevron-down"></div>
+                                          </button>
+                                          <div class="krds-form-check">
+                                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_2_1">
+                                            <label for="brm_list_chk_5_2_2_2_1">5depth</label>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li class="active">
+                                        <div class="list-name">
+                                          <button type="button" class="krds-btn icon medium">
+                                            <div class="svg-icon ico-chevron-down"></div>
+                                          </button>
+                                          <div class="krds-form-check">
+                                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_2_2">
+                                            <label for="brm_list_chk_5_2_2_2_2">5depth</label>
+                                          </div>
+                                        </div>
+                                        <ul class="list">
+                                          <li>
+                                            <div class="list-name">
+                                              <button type="button" class="krds-btn icon medium">
+                                                <div class="svg-icon ico-chevron-down"></div>
+                                              </button>
+                                              <div class="krds-form-check">
+                                                <input type="checkbox" name="brm_list_chk"
+                                                  id="brm_list_chk_5_2_2_2_2_1">
+                                                <label for="brm_list_chk_5_2_2_2_2_1">6depth</label>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="active">
+                                            <div class="list-name">
+                                              <button type="button" class="krds-btn icon medium">
+                                                <div class="svg-icon ico-chevron-down"></div>
+                                              </button>
+                                              <div class="krds-form-check">
+                                                <input type="checkbox" name="brm_list_chk"
+                                                  id="brm_list_chk_5_2_2_2_2_2">
+                                                <label for="brm_list_chk_5_2_2_2_2_2">6depth</label>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </section>
+                  <section id="panel_brm_02" aria-labelledby="tab_brm_02" class="tab-conts" data-quick-nav="false">
+                    <ul class="menu-list infinite">
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_1">
+                            <label for="brm_list_chk_1">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_2">
+                            <label for="brm_list_chk_2">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_3">
+                            <label for="brm_list_chk_3">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_4">
+                            <label for="brm_list_chk_4">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="active">
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5">
+                            <label for="brm_list_chk_5">1depth</label>
+                          </div>
+                        </div>
+                        <ul class="list">
+                          <li>
+                            <div class="list-name">
+                              <button type="button" class="krds-btn icon medium">
+                                <div class="svg-icon ico-chevron-down"></div>
+                              </button>
+                              <div class="krds-form-check">
+                                <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_1">
+                                <label for="brm_list_chk_5_1">2depth</label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="active">
+                            <div class="list-name">
+                              <button type="button" class="krds-btn icon medium">
+                                <div class="svg-icon ico-chevron-down"></div>
+                              </button>
+                              <div class="krds-form-check">
+                                <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2">
+                                <label for="brm_list_chk_5_2">2depth</label>
+                              </div>
+                            </div>
+                            <ul class="list">
+                              <li>
+                                <div class="list-name">
+                                  <button type="button" class="krds-btn icon medium">
+                                    <div class="svg-icon ico-chevron-down"></div>
+                                  </button>
+                                  <div class="krds-form-check">
+                                    <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_1">
+                                    <label for="brm_list_chk_5_2_1">3depth</label>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="active">
+                                <div class="list-name">
+                                  <button type="button" class="krds-btn icon medium">
+                                    <div class="svg-icon ico-chevron-down"></div>
+                                  </button>
+                                  <div class="krds-form-check">
+                                    <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2">
+                                    <label for="brm_list_chk_5_2_2">3depth</label>
+                                  </div>
+                                </div>
+                                <ul class="list">
+                                  <li>
+                                    <div class="list-name">
+                                      <button type="button" class="krds-btn icon medium">
+                                        <div class="svg-icon ico-chevron-down"></div>
+                                      </button>
+                                      <div class="krds-form-check">
+                                        <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_1">
+                                        <label for="brm_list_chk_5_2_2_1">4depth</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="active">
+                                    <div class="list-name">
+                                      <button type="button" class="krds-btn icon medium">
+                                        <div class="svg-icon ico-chevron-down"></div>
+                                      </button>
+                                      <div class="krds-form-check">
+                                        <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_2">
+                                        <label for="brm_list_chk_5_2_2_2">4depth</label>
+                                      </div>
+                                    </div>
+                                    <ul class="list">
+                                      <li>
+                                        <div class="list-name">
+                                          <button type="button" class="krds-btn icon medium">
+                                            <div class="svg-icon ico-chevron-down"></div>
+                                          </button>
+                                          <div class="krds-form-check">
+                                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_2_1">
+                                            <label for="brm_list_chk_5_2_2_2_1">5depth</label>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li class="active">
+                                        <div class="list-name">
+                                          <button type="button" class="krds-btn icon medium">
+                                            <div class="svg-icon ico-chevron-down"></div>
+                                          </button>
+                                          <div class="krds-form-check">
+                                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_2_2">
+                                            <label for="brm_list_chk_5_2_2_2_2">5depth</label>
+                                          </div>
+                                        </div>
+                                        <ul class="list">
+                                          <li>
+                                            <div class="list-name">
+                                              <button type="button" class="krds-btn icon medium">
+                                                <div class="svg-icon ico-chevron-down"></div>
+                                              </button>
+                                              <div class="krds-form-check">
+                                                <input type="checkbox" name="brm_list_chk"
+                                                  id="brm_list_chk_5_2_2_2_2_1">
+                                                <label for="brm_list_chk_5_2_2_2_2_1">6depth</label>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="active">
+                                            <div class="list-name">
+                                              <button type="button" class="krds-btn icon medium">
+                                                <div class="svg-icon ico-chevron-down"></div>
+                                              </button>
+                                              <div class="krds-form-check">
+                                                <input type="checkbox" name="brm_list_chk"
+                                                  id="brm_list_chk_5_2_2_2_2_2">
+                                                <label for="brm_list_chk_5_2_2_2_2_2">6depth</label>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </section>
+                  <section id="panel_brm_03" aria-labelledby="tab_brm_03" class="tab-conts" data-quick-nav="false">
+                    <ul class="menu-list infinite">
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_1">
+                            <label for="brm_list_chk_1">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_2">
+                            <label for="brm_list_chk_2">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_3">
+                            <label for="brm_list_chk_3">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_4">
+                            <label for="brm_list_chk_4">1depth</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="active">
+                        <div class="list-name">
+                          <button type="button" class="krds-btn icon medium">
+                            <div class="svg-icon ico-chevron-down"></div>
+                          </button>
+                          <div class="krds-form-check">
+                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5">
+                            <label for="brm_list_chk_5">1depth</label>
+                          </div>
+                        </div>
+                        <ul class="list">
+                          <li>
+                            <div class="list-name">
+                              <button type="button" class="krds-btn icon medium">
+                                <div class="svg-icon ico-chevron-down"></div>
+                              </button>
+                              <div class="krds-form-check">
+                                <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_1">
+                                <label for="brm_list_chk_5_1">2depth</label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="active">
+                            <div class="list-name">
+                              <button type="button" class="krds-btn icon medium">
+                                <div class="svg-icon ico-chevron-down"></div>
+                              </button>
+                              <div class="krds-form-check">
+                                <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2">
+                                <label for="brm_list_chk_5_2">2depth</label>
+                              </div>
+                            </div>
+                            <ul class="list">
+                              <li>
+                                <div class="list-name">
+                                  <button type="button" class="krds-btn icon medium">
+                                    <div class="svg-icon ico-chevron-down"></div>
+                                  </button>
+                                  <div class="krds-form-check">
+                                    <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_1">
+                                    <label for="brm_list_chk_5_2_1">3depth</label>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="active">
+                                <div class="list-name">
+                                  <button type="button" class="krds-btn icon medium">
+                                    <div class="svg-icon ico-chevron-down"></div>
+                                  </button>
+                                  <div class="krds-form-check">
+                                    <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2">
+                                    <label for="brm_list_chk_5_2_2">3depth</label>
+                                  </div>
+                                </div>
+                                <ul class="list">
+                                  <li>
+                                    <div class="list-name">
+                                      <button type="button" class="krds-btn icon medium">
+                                        <div class="svg-icon ico-chevron-down"></div>
+                                      </button>
+                                      <div class="krds-form-check">
+                                        <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_1">
+                                        <label for="brm_list_chk_5_2_2_1">4depth</label>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="active">
+                                    <div class="list-name">
+                                      <button type="button" class="krds-btn icon medium">
+                                        <div class="svg-icon ico-chevron-down"></div>
+                                      </button>
+                                      <div class="krds-form-check">
+                                        <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_2">
+                                        <label for="brm_list_chk_5_2_2_2">4depth</label>
+                                      </div>
+                                    </div>
+                                    <ul class="list">
+                                      <li>
+                                        <div class="list-name">
+                                          <button type="button" class="krds-btn icon medium">
+                                            <div class="svg-icon ico-chevron-down"></div>
+                                          </button>
+                                          <div class="krds-form-check">
+                                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_2_1">
+                                            <label for="brm_list_chk_5_2_2_2_1">5depth</label>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li class="active">
+                                        <div class="list-name">
+                                          <button type="button" class="krds-btn icon medium">
+                                            <div class="svg-icon ico-chevron-down"></div>
+                                          </button>
+                                          <div class="krds-form-check">
+                                            <input type="checkbox" name="brm_list_chk" id="brm_list_chk_5_2_2_2_2">
+                                            <label for="brm_list_chk_5_2_2_2_2">5depth</label>
+                                          </div>
+                                        </div>
+                                        <ul class="list">
+                                          <li>
+                                            <div class="list-name">
+                                              <button type="button" class="krds-btn icon medium">
+                                                <div class="svg-icon ico-chevron-down"></div>
+                                              </button>
+                                              <div class="krds-form-check">
+                                                <input type="checkbox" name="brm_list_chk"
+                                                  id="brm_list_chk_5_2_2_2_2_1">
+                                                <label for="brm_list_chk_5_2_2_2_2_1">6depth</label>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="active">
+                                            <div class="list-name">
+                                              <button type="button" class="krds-btn icon medium">
+                                                <div class="svg-icon ico-chevron-down"></div>
+                                              </button>
+                                              <div class="krds-form-check">
+                                                <input type="checkbox" name="brm_list_chk"
+                                                  id="brm_list_chk_5_2_2_2_2_2">
+                                                <label for="brm_list_chk_5_2_2_2_2_2">6depth</label>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+                <!-- //tab contents -->
+              </div>
+            </div>
+            <div class="right-box">
+              <div class="result-box">
+                <div class="box-wrap box01">
+                  <div class="border-box">
+                    <p class="box-title">기능별</p>
+                    <ul class="result-list">
+                      <!-- 구조 변경되면 common.js 에서 html 구조 변경 요망 -->
+                      <li>
+                        <div class="name-box">
+                          <p>범정부통합전산센터구축사업 추진</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                      <li>
+                        <div class="name-box">
+                          <p>부내 업무관리시스템 관리</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+                <div class="box-wrap box02">
+                  <button type="button" class="krds-btn icon secondary changeBtn">
+                    <i class="svg-icon ico-switch-horizontal-01"></i> <span class="sr-only">변경</span>
+                  </button>
+                  <div class="border-box">
+                    <p class="box-title">목적별</p>
+                    <ul class="result-list">
+                      <li>
+                        <div class="name-box">
+                          <p>신속하고 정확하며 가치있는 가상서비스의 실현</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                      <li>
+                        <div class="name-box">
+                          <p>폭염·가뭄 등 기후재난 대응역량 강화</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+                <div class="box-wrap box03">
+                  <div class="border-box">
+                    <p class="box-title">조직별</p>
+                    <ul class="result-list">
+                      <li>
+                        <div class="name-box">
+                          <p>행정안전부</p>
+                        </div>
+                        <button type="button" class="krds-btn icon xsmall deletBtn">
+                          <i class="svg-icon ico-close"></i>
+                          <p class="sr-only">삭제</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-btn btn-wrap">
+            <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+            <button type="button" class="krds-btn medium primary close-modal">저장</button>
+          </div>
+          <button type="button" class="krds-btn medium icon btn-close close-modal">
+            <span class="sr-only">닫기</span>
+            <i class="svg-icon ico-popup-close"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-back in"></div>
+    </section>
+    <section id="modal_project_01_invite_user" class="krds-modal fade" role="dialog"
+      aria-labelledby="modal_project_01_invite_user">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-conts">
+            <button type="button" class="krds-btn medium icon btn-close close-modal">
+              <span class="sr-only">닫기</span>
+              <i class="svg-icon ico-popup-close"></i>
+            </button>
+            <div class="text-type1">
+              <h2 class="tit_modal">업무공간에 참여한 모든 사용자<Br>에게 알림을 발송하였습니다.</h2>
+              <p class="small-text">알림은 메일, 메신저로 발송됩니다.</p>
+            </div>
+            <button type="button" class="krds-btn medium primary close-modal">&nbsp;확인&nbsp;</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-back in"></div>
+    </section>
+  </div>
+  <script>
+    //비주얼 배너
+    const documentExampleCarouselSwiper = new Swiper('.document-example-carousel .swiper', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      speed: 400,
+      loop: true,
+      navigation: false,
+      pagination: {
+        el: ".document-example-carousel .swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <!-- //carousel -->
+</body>
+</html>
